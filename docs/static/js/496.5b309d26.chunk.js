@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalbw_reader=self.webpackChunkalbw_reader||[]).push([[496],{496:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});var r=a(579);const c=()=>(0,r.jsx)("section",{className:"App",children:(0,r.jsx)("div",{children:"READ YOUR SPOILER LOG!"})})}}]);
+//# sourceMappingURL=496.5b309d26.chunk.js.map

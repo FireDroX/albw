@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalbw_reader=self.webpackChunkalbw_reader||[]).push([[48],{48:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});var r=a(579);const c=()=>(0,r.jsx)("section",{className:"App",children:(0,r.jsx)("div",{children:"HOME PAGE"})})}}]);
+//# sourceMappingURL=48.18a204a7.chunk.js.map
