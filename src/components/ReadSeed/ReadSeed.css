@@ -1,0 +1,42 @@
+.read-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-block: 1rem;
+}
+
+.read-values {
+  height: min-content;
+  width: 30rem;
+  background-color: var(--primary5);
+  border-radius: 50px;
+  padding: 1rem;
+  border: solid 2px var(--secondary5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.read-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.read-imgs > img {
+  border-radius: 50px;
+  padding: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 600px) {
+  .read-values {
+    width: 23rem;
+  }
+}

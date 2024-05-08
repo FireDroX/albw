@@ -1,7 +1,11 @@
+import ReadSeed from "../../components/ReadSeed/ReadSeed";
+
 const Reader = () => {
   return (
     <section className="App">
-      <div>READ YOUR SPOILER LOG!</div>
+      <div>
+        <ReadSeed />
+      </div>
     </section>
   );
 };

@@ -1,0 +1,851 @@
+{
+  "seed":                                                1294316049,
+  "version":                                             "v0.3.1",
+  "hash":                                                "(Bombs) (Bow) (Bombs) (Y) (X)",
+  "settings": {
+    "logic": {
+      "logic_mode":                                      "Normal",
+      "randomize_dungeon_prizes":                        true,
+      "vanilla_charm":                                   false,
+      "lc_requirement":                                  3,
+      "ped_requirement":                                 "Vanilla",
+      "hyrule_castle_setting":                           "EarlyLoruleCastle",
+      "nice_mode":                                       true,
+      "no_progression_enemies":                          false,
+      "skip_big_bomb_flower":                            true,
+      "reverse_sage_events":                             true,
+      "start_with_merge":                                true,
+      "bell_in_shop":                                    true,
+      "pouch_in_shop":                                   true,
+      "sword_in_shop":                                   false,
+      "boots_in_shop":                                   false,
+      "assured_weapon":                                  false,
+      "minigames_excluded":                              true,
+      "swordless_mode":                                  false,
+      "super_items":                                     true,
+      "skip_trials":                                     true,
+      "bow_of_light_in_castle":                          false,
+      "dark_rooms_lampless":                             false,
+      "maiamai_madness":                                 true,
+      "weather_vanes_activated":                         false,
+      "hint_ghost_price":                                1
+    },
+    "options": {
+      "chest_size_matches_contents":                     false,
+      "night_mode":                                      false
+    },
+    "exclusions": {}
+  },
+  "layout": {
+    "Hyrule": {
+      "Central Hyrule": {
+        "Behind Blacksmith":                             "Heart Container",
+        "Blacksmith":                                    "Silver Rupee",
+        "Blacksmith Cave":                               "Purple Rupee",
+        "Blacksmith Table":                              "Lost Maiamai",
+        "Cucco Treasure Dungeon":                        "Monster Horn",
+        "Hyrule Castle Rocks":                           "Lost Maiamai",
+        "Ravio (1)":                                     "Piece of Heart",
+        "Ravio (2)":                                     "Purple Rupee",
+        "Ravio (3)":                                     "Pouch",
+        "Ravio (4)":                                     "Piece of Heart",
+        "Ravio (5)":                                     "Bell",
+        "Ravio (6)":                                     "Lost Maiamai",
+        "Ravio (7)":                                     "Red Rupee",
+        "Ravio (8)":                                     "Lost Maiamai",
+        "Ravio (9)":                                     "Bombs",
+        "Wildlife Clearing Stump":                       "Lost Maiamai",
+        "[Mai] Behind Link's House":                     "Lost Maiamai",
+        "[Mai] Blacksmith Tornado Tile":                 "Lost Maiamai",
+        "[Mai] Cucco Dungeon Big Rock":                  "Monster Guts",
+        "[Mai] Hyrule Castle Tornado Tile":              "Piece of Heart",
+        "[Mai] Hyrule Castle Tree":                      "Lost Maiamai",
+        "[Mai] Tree Behind Blacksmith":                  "Piece of Heart",
+        "[Mai] Tree West of Link's House":               "Silver Rupee",
+        "[Mai] Wildlife Clearing Tree":                  "Purple Rupee"
+      },
+      "Death Mountain": {
+        "Bouldering Guy":                                "Gold Rupee",
+        "Death Mountain Blocked Cave":                   "Lost Maiamai",
+        "Death Mountain Fairy Cave":                     "Piece of Heart",
+        "Death Mountain Open Cave":                      "Lost Maiamai",
+        "Death Mountain Treasure Dungeon":               "Master Ore",
+        "Death Mountain West Highest Cave":              "Hammer",
+        "Death Mountain West Ledge":                     "Lost Maiamai",
+        "Donkey Cave Pegs":                              "Silver Rupee",
+        "Fire Cave Pillar":                              "Purple Rupee",
+        "Floating Island":                               "Lost Maiamai",
+        "Spectacle Rock":                                "Sword Upgrade",
+        "[Mai] Death Mountain Base Rock":                "Silver Rupee",
+        "[Mai] Death Mountain East Ledge":               "Purple Rupee",
+        "[Mai] Death Mountain West Ledge":               "Silver Rupee",
+        "[Mai] Outside Hookshot Dungeon":                "Red Rupee",
+        "[Mai] Rosso's Ore Mine Rock":                   "Silver Rupee"
+      },
+      "Desert Region": {
+        "[Mai] Buried in the Desert":                    "Gold Rupee",
+        "[Mai] Buried near Desert Palace":               "Red Rupee",
+        "[Mai] Southern Ruins Big Rock":                 "Silver Rupee"
+      },
+      "Eastern Ruins": {
+        "Bird Lover":                                    "Ice Rod",
+        "Eastern Ruins Armos Chest":                     "Heart Container",
+        "Eastern Ruins Cave":                            "Lost Maiamai",
+        "Eastern Ruins Hookshot Chest":                  "Lost Maiamai",
+        "Eastern Ruins Merge Chest":                     "Empty Bottle",
+        "Eastern Ruins Peg Circle":                      "Pegasus Boots",
+        "Eastern Ruins Treasure Dungeon":                "Purple Rupee",
+        "[Mai] Atop Eastern Rocks":                      "Empty Bottle",
+        "[Mai] Eastern Ruins Big Rock":                  "Purple Rupee",
+        "[Mai] Eastern Ruins Green Tree":                "Sand Rod",
+        "[Mai] Eastern Ruins Wall":                      "Empty Bottle",
+        "[Mai] Eastern Ruins Yellow Tree":               "Lost Maiamai",
+        "[Mai] Southern Bridge River":                   "Lost Maiamai"
+      },
+      "Irene the Witch": {
+        "Irene":                                         "Bee Badge"
+      },
+      "Kakariko Village": {
+        "Bee Guy (1)":                                   "Monster Guts",
+        "Bee Guy (2)":                                   "Lost Maiamai",
+        "Dodge the Cuccos":                              "Heart Container",
+        "Kakariko Item Shop (1)":                        "Scoot Fruit",
+        "Kakariko Item Shop (2)":                        "Foul Fruit",
+        "Kakariko Item Shop (3)":                        "Shield",
+        "Kakariko Jail":                                 "Piece of Heart",
+        "Kakariko Well (Bottom)":                        "Gold Rupee",
+        "Kakariko Well (Top)":                           "Monster Guts",
+        "Rupee Rush (Hyrule)":                           "Piece of Heart",
+        "Shady Guy":                                     "Lost Maiamai",
+        "Street Merchant (Left)":                        "Lost Maiamai",
+        "Street Merchant (Right)":                       "Piece of Heart",
+        "Stylish Woman":                                 "Lost Maiamai",
+        "Woman":                                         "Silver Rupee",
+        "[Mai] Cucco Ranch Tree":                        "Silver Rupee",
+        "[Mai] Hyrule Rupee Rush Wall":                  "Red Rupee",
+        "[Mai] Kakariko Bush":                           "Lost Maiamai",
+        "[Mai] Kakariko Sand":                           "Silver Rupee",
+        "[Mai] Woman's Roof Rock":                       "Lost Maiamai"
+      },
+      "Lake Hylia": {
+        " 10 Maiamai":                                   "Blue Rupee",
+        " 20 Maiamai":                                   "Red Rupee",
+        " 30 Maiamai":                                   "Piece of Heart",
+        " 40 Maiamai":                                   "Monster Horn",
+        " 50 Maiamai":                                   "Piece of Heart",
+        " 60 Maiamai":                                   "Red Rupee",
+        " 70 Maiamai":                                   "Heart Container",
+        " 80 Maiamai":                                   "Heart Container",
+        " 90 Maiamai":                                   "Blue Rupee",
+        "100 Maiamai":                                   "Monster Guts",
+        "Ice Rod Cave":                                  "Lost Maiamai",
+        "Lake Hylia Dark Cave":                          "Piece of Heart",
+        "Lake Hylia Ledge Chest":                        "Lost Maiamai",
+        "Lakeside Item Shop (1)":                        "Scoot Fruit",
+        "Lakeside Item Shop (2)":                        "Foul Fruit",
+        "Lakeside Item Shop (3)":                        "Shield",
+        "Southeastern Shore":                            "Master Ore",
+        "[Mai] Hyrule Hotfoot Big Rock":                 "Lost Maiamai",
+        "[Mai] Island Tornado Tile":                     "Piece of Heart",
+        "[Mai] Lake Hylia SE Wall":                      "Silver Rupee",
+        "[Mai] Lake Hylia Shallow Ring":                 "Silver Rupee",
+        "[Mai] Outside Maiamai Cave":                    "Monster Tail"
+      },
+      "Lost Woods Region": {
+        "Fortune-Teller":                                "Lost Maiamai",
+        "Hyrule Hotfoot (First Race)":                   "Monster Guts",
+        "Hyrule Hotfoot (Second Race)":                  "Silver Rupee",
+        "Lost Woods Alcove":                             "Hint Glasses",
+        "Lost Woods Big Rock Chest":                     "Lost Maiamai",
+        "Master Sword Pedestal":                         "Tornado Rod",
+        "Rosso":                                         "Lost Maiamai",
+        "Rosso Cave":                                    "Sword Upgrade",
+        "Rosso Rocks":                                   "Lost Maiamai",
+        "[Mai] Fortune-Teller Tent":                     "Lost Maiamai",
+        "[Mai] Lost Woods Bush":                         "Smooth Gem",
+        "[Mai] Lost Woods Path Rock":                    "Lost Maiamai",
+        "[Mai] Lost Woods Rock":                         "Silver Rupee",
+        "[Mai] Lost Woods Tree":                         "Lost Maiamai",
+        "[Mai] Moldorm Ledge":                           "Red Rupee",
+        "[Mai] Rosso Wall":                              "Lost Maiamai",
+        "[Mai] Small Pond":                              "Silver Rupee"
+      },
+      "Southern Ruins": {
+        "Runaway Item Seller":                           "Blue Rupee",
+        "Southern Ruins Ledge":                          "Silver Rupee",
+        "Southern Ruins Pillar Cave":                    "Lost Maiamai",
+        "Southern Ruins Treasure Dungeon":               "Piece of Heart",
+        "[Mai] Outside Flippers Dungeon":                "Silver Rupee",
+        "[Mai] Southern Ruins Bomb Cave":                "Lost Maiamai",
+        "[Mai] Southern Ruins Pillars":                  "Lost Maiamai"
+      },
+      "Zora's River": {
+        "Queen Oren":                                    "Silver Rupee",
+        "Waterfall Cave":                                "Boomerang",
+        "Zora's Domain Ledge":                           "Lost Maiamai",
+        "Zora's River Treasure Dungeon":                 "Lost Maiamai",
+        "[Mai] Inside Witch's House":                    "Lost Maiamai",
+        "[Mai] Under Wooden Bridge":                     "Lost Maiamai",
+        "[Mai] Waterfall Ledge Wall":                    "Blue Rupee",
+        "[Mai] Zora's Domain South Wall":                "Purple Rupee",
+        "[Mai] Zora's Domain Water":                     "Silver Rupee"
+      }
+    },
+    "Lorule": {
+      "Central Lorule": {
+        "Big Bomb Flower Cave":                          "Silver Rupee",
+        "Blacksmith (Lorule)":                           "Bracelet Upgrade",
+        "Fortune's Choice":                              "Piece of Heart",
+        "Great Rupee Fairy":                             "Empty Bottle",
+        "Lorule Field Hookshot Chest":                   "Piece of Heart",
+        "Lorule Field Treasure Dungeon":                 "Lost Maiamai",
+        "Octoball Derby":                                "Blue Rupee",
+        "Rupee Rush (Lorule)":                           "Monster Guts",
+        "Swamp Cave (Left)":                             "Lost Maiamai",
+        "Swamp Cave (Middle)":                           "Purple Rupee",
+        "Swamp Cave (Right)":                            "Red Rupee",
+        "Thief Girl":                                    "Lost Maiamai",
+        "Thieves' Town Item Shop (1)":                   "Bee",
+        "Thieves' Town Item Shop (2)":                   "Golden Bee",
+        "Thieves' Town Item Shop (3)":                   "Fairy",
+        "Thieves' Town Item Shop (4)":                   "Shield",
+        "Vacant House":                                  "Lost Maiamai",
+        "[Mai] Behind Vacant House":                     "Lost Maiamai",
+        "[Mai] Big Bomb Flower Grass":                   "Red Rupee",
+        "[Mai] Lorule Blacksmith Wall":                  "Lost Maiamai",
+        "[Mai] Lorule Castle Tree":                      "Silver Rupee",
+        "[Mai] Lorule Castle Wall":                      "Green Rupee",
+        "[Mai] Lorule Haunted Grove Wall":               "Premium Milk",
+        "[Mai] Lorule Rupee Rush Wall":                  "Blue Rupee",
+        "[Mai] Lorule S Ruins Pillars":                  "Lost Maiamai",
+        "[Mai] Lorule S Ruins Wall":                     "Silver Rupee",
+        "[Mai] Lorule S Ruins Water":                    "Lost Maiamai",
+        "[Mai] Near Lorule Fortune-Teller":              "Purple Rupee",
+        "[Mai] Octoball Derby Skull":                    "Monster Tail",
+        "[Mai] Thieves' Town Tree":                      "Lost Maiamai",
+        "[Mai] Thieves' Town Wall":                      "Lost Maiamai",
+        "[Mai] Vacant House Big Rock":                   "Purple Rupee"
+      },
+      "Chamber of the Sages": {
+        "Osfala":                                        "Piece of Heart"
+      },
+      "Dark Ruins": {
+        "Dark Maze Chest":                               "Blue Rupee",
+        "Dark Maze Ledge":                               "Lost Maiamai",
+        "Dark Ruins Lakeview Chest":                     "Zora's Flippers",
+        "Hinox (1)":                                     "Purple Rupee",
+        "Hinox (2)":                                     "Lost Maiamai",
+        "Hinox (3)":                                     "Lost Maiamai",
+        "Hinox (4)":                                     "Piece of Heart",
+        "Hinox (5)":                                     "Stamina Scroll",
+        "Hinox (6)":                                     "Fire Rod",
+        "Ku's Domain Fight":                             "Piece of Heart",
+        "[Mai] Atop Dark Ruins Rocks":                   "Lost Maiamai",
+        "[Mai] Dark Maze Center Wall":                   "Lost Maiamai",
+        "[Mai] Dark Maze Entrance Wall":                 "Monster Guts",
+        "[Mai] Dark Ruins East Tree":                    "Lost Maiamai",
+        "[Mai] Dark Ruins South Area Wall":              "Bow",
+        "[Mai] Dark Ruins Waterfall":                    "Piece of Heart",
+        "[Mai] Dark Ruins West Tree":                    "Lost Maiamai",
+        "[Mai] Ku's Domain Grass":                       "Red Rupee",
+        "[Mai] Ku's Domain Water":                       "Purple Rupee",
+        "[Mai] Outside Hinox Cave":                      "Red Rupee"
+      },
+      "Lorule Death Mountain": {
+        "Behind Ice Gimos":                              "Gold Rupee",
+        "Ice Gimos Fight":                               "Lost Maiamai",
+        "Lorule Mountain E Ledge":                       "Silver Rupee",
+        "Lorule Mountain W Ledge":                       "Bombs",
+        "Treacherous Tower Advanced (1)":                "Heart Container",
+        "Treacherous Tower Advanced (2)":                "Red Rupee",
+        "Treacherous Tower Intermediate":                "Red Rupee",
+        "[Mai] Lorule Mountain E Big Rock":              "Lost Maiamai",
+        "[Mai] Lorule Mountain E Skull":                 "Lost Maiamai",
+        "[Mai] Lorule Mountain E Wall":                  "Purple Rupee",
+        "[Mai] Lorule Mountain W Big Rock":              "Red Rupee",
+        "[Mai] Lorule Mountain W Skull":                 "Heart Container",
+        "[Mai] Outside Ice Ruins":                       "Lost Maiamai"
+      },
+      "Misery Mire": {
+        "Misery Mire Ledge":                             "Blue Rupee",
+        "Misery Mire Treasure Dungeon":                  "Silver Rupee",
+        "[Mai] Misery Mire Big Rock":                    "Lost Maiamai",
+        "[Mai] Misery Mire Wall":                        "Net",
+        "[Mai] Misery Mire Water":                       "Gold Rupee"
+      },
+      "Skull Woods Region": {
+        "Canyon House":                                  "Lost Maiamai",
+        "Destroyed House":                               "Lost Maiamai",
+        "Mysterious Man":                                "Golden Bee",
+        "[Mai] Canyon House Wall":                       "Lost Maiamai",
+        "[Mai] Skull Woods Big Rock":                    "Piece of Heart",
+        "[Mai] Skull Woods Bush":                        "Silver Rupee",
+        "[Mai] Skull Woods Dry Pond":                    "Monster Guts",
+        "[Mai] Skull Woods Entrance Wall":               "Lost Maiamai",
+        "[Mai] Skull Woods Grass":                       "Fire Rod",
+        "[Mai] Skull Woods Shack Tree":                  "Piece of Heart",
+        "[Mai] Skull Woods Skull":                       "Gold Rupee"
+      },
+      "Turtle Rock Region": {
+        "Lorule Lake Chest":                             "Silver Rupee",
+        "Lorule Lakeside Item Shop (1)":                 "Bee",
+        "Lorule Lakeside Item Shop (2)":                 "Golden Bee",
+        "Lorule Lakeside Item Shop (3)":                 "Fairy",
+        "Lorule Lakeside Item Shop (4)":                 "Shield",
+        "[Mai] Lorule Lake Big Rock":                    "Gold Rupee",
+        "[Mai] Lorule Lake SE Wall":                     "Lost Maiamai",
+        "[Mai] Lorule Lake Skull":                       "Lost Maiamai",
+        "[Mai] Lorule Lake Water":                       "Lost Maiamai",
+        "[Mai] Lorule Lake West Wall":                   "Lamp"
+      }
+    },
+    "Dungeons": {
+      "Dark Palace": {
+        "Dark Palace Prize":                             "Sage Irene",
+        "[PD] (1F) Fall From 2F":                        "Piece of Heart",
+        "[PD] (1F) Hidden Room (Lower)":                 "Small Key",
+        "[PD] (1F) Hidden Room (Upper)":                 "Big Key",
+        "[PD] (1F) Left Pit":                            "Small Key",
+        "[PD] (1F) Right Pit":                           "Silver Rupee",
+        "[PD] (1F) Switch Puzzle":                       "Compass",
+        "[PD] (2F) Alcove":                              "Lost Maiamai",
+        "[PD] (2F) Big Chest (Hidden)":                  "Lost Maiamai",
+        "[PD] (2F) South Hidden Room":                   "Gold Rupee",
+        "[PD] (B1) Big Chest (Switches)":                "Purple Rupee",
+        "[PD] (B1) Fall From 1F":                        "Monster Guts",
+        "[PD] (B1) Helmasaur Room":                      "Small Key",
+        "[PD] (B1) Helmasaur Room (Fall)":               "Piece of Heart",
+        "[PD] (B1) Maze":                                "Small Key",
+        "[PD] Gemesaur King":                            "Blue Rupee"
+      },
+      "Desert Palace": {
+        "Desert Palace Prize":                           "Pendant of Wisdom",
+        "Zaganaga":                                      "Lost Maiamai",
+        "[DP] (1F) Behind Rocks":                        "Small Key",
+        "[DP] (1F) Big Chest (Behind Wall)":             "Silver Rupee",
+        "[DP] (1F) Entrance":                            "Bow",
+        "[DP] (1F) Sand Room (North)":                   "Small Key",
+        "[DP] (1F) Sand Room (South)":                   "Lost Maiamai",
+        "[DP] (1F) Sand Switch Room":                    "Big Key",
+        "[DP] (2F) Beamos Room":                         "Heart Container",
+        "[DP] (2F) Big Chest (Puzzle)":                  "Small Key",
+        "[DP] (2F) Leever Room":                         "Heart Container",
+        "[DP] (2F) Red/Blue Switches":                   "Silver Rupee",
+        "[DP] (2F) Under Rock (Ball Room)":              "Small Key",
+        "[DP] (2F) Under Rock (Left)":                   "Small Key",
+        "[DP] (2F) Under Rock (Right)":                  "Compass",
+        "[DP] (3F) Armos Room":                          "Master Ore",
+        "[DP] (3F) Behind Falling Sand":                 "Red Rupee"
+      },
+      "Eastern Palace": {
+        "Eastern Palace Prize":                          "Pendant of Power",
+        "[EP] (1F) Escape Chest":                        "Monster Guts",
+        "[EP] (1F) Left Door Chest":                     "Small Key",
+        "[EP] (1F) Merge Chest":                         "Small Key",
+        "[EP] (1F) Popo Room":                           "Big Key",
+        "[EP] (1F) Secret Room":                         "Lost Maiamai",
+        "[EP] (1F) Switch Room":                         "Monster Tail",
+        "[EP] (2F) Ball Room":                           "Monster Horn",
+        "[EP] (2F) Big Chest":                           "Lamp",
+        "[EP] (2F) Defeat Popos":                        "Ice Rod",
+        "[EP] (2F) Switch Room":                         "Compass",
+        "[EP] (3F) Escape Chest":                        "Hammer",
+        "[EP] Yuga (1)":                                 "Strength Upgrade",
+        "[EP] Yuga (2)":                                 "Green Rupee"
+      },
+      "Graveyard": {
+        "Dampe":                                         "Bow of Light",
+        "Graveyard Ledge Cave":                          "Lost Maiamai",
+        "Graveyard Peninsula":                           "Purple Rupee",
+        "Philosopher's Cave":                            "Lost Maiamai",
+        "Sanctuary Pegs":                                "Piece of Heart",
+        "[HS] Entrance":                                 "Purple Rupee",
+        "[HS] Ledge":                                    "Small Key",
+        "[HS] Lower Chest":                              "Lost Maiamai",
+        "[HS] Upper Chest":                              "Lost Maiamai",
+        "[LS] Entrance Chest":                           "Red Rupee",
+        "[LS] Ledge":                                    "Red Rupee",
+        "[LS] Lower Chest":                              "Silver Rupee",
+        "[LS] Upper Chest":                              "Small Key",
+        "[Mai] Hyrule Graveyard Wall":                   "Silver Rupee",
+        "[Mai] Lorule Graveyard Big Rock":               "Lost Maiamai",
+        "[Mai] Lorule Graveyard Tree":                   "Piece of Heart",
+        "[Mai] Lorule Graveyard Wall":                   "Lost Maiamai",
+        "[Mai] Sanctuary Wall":                          "Armor Upgrade"
+      },
+      "House of Gales": {
+        "House of Gales Prize":                          "Sage Oren",
+        "[HG] (1F) Fire Bubbles":                        "Bracelet Upgrade",
+        "[HG] (1F) Switch Room":                         "Big Key",
+        "[HG] (1F) Torches":                             "Small Key",
+        "[HG] (1F) West Room":                           "Small Key",
+        "[HG] (1F) West Room Secret":                    "Lost Maiamai",
+        "[HG] (2F) Big Chest":                           "Piece of Heart",
+        "[HG] (2F) Fire Ring":                           "Small Key",
+        "[HG] (2F) Narrow Ledge":                        "Small Key",
+        "[HG] (3F) Fire Bubbles":                        "Red Rupee",
+        "[HG] (3F) Rat Room":                            "Silver Rupee",
+        "[HG] Margomill":                                "Compass"
+      },
+      "Hyrule Castle": {
+        "Hyrule Castle Battlement":                      "Lost Maiamai",
+        "Hyrule Castle Prize":                           "Sage Seres",
+        "Hyrule Castle West Wing":                       "Lost Maiamai"
+      },
+      "Ice Ruins": {
+        "Ice Ruins Prize":                               "Pendant of Courage Upgrade",
+        "[IR] (1F) Hidden Chest":                        "Big Key",
+        "[IR] (B1) East Chest":                          "Silver Rupee",
+        "[IR] (B1) Narrow Ledge":                        "Small Key",
+        "[IR] (B1) Upper Chest":                         "Lost Maiamai",
+        "[IR] (B2) Long Merge Chest":                    "Monster Tail",
+        "[IR] (B3) Big Chest (Puzzle)":                  "Hookshot",
+        "[IR] (B3) Grate Chest (Left)":                  "Red Rupee",
+        "[IR] (B3) Grate Chest (Right)":                 "Lost Maiamai",
+        "[IR] (B4) Ice Pillar":                          "Red Rupee",
+        "[IR] (B4) Narrow Platform":                     "Small Key",
+        "[IR] (B4) Southeast Chest (Fall)":              "Lost Maiamai",
+        "[IR] (B4) Southwest Chest (Fall)":              "Lost Maiamai",
+        "[IR] (B4) Switches":                            "Compass",
+        "[IR] (B5) Big Chest":                           "Small Key",
+        "[IR] Dharkstare":                               "Purple Rupee"
+      },
+      "Lorule Castle": {
+        "Zelda":                                         "Lost Maiamai",
+        "[LC] (1F) Center":                              "Small Key",
+        "[LC] (1F) Ledge":                               "Small Key",
+        "[LC] (2F) Hidden Path":                         "Lost Maiamai",
+        "[LC] (2F) Ledge":                               "Monster Guts",
+        "[LC] (2F) Near Torches":                        "Hylian Shield",
+        "[LC] (3F) Big Bomb Flower Chest":               "Strength Upgrade",
+        "[LC] (3F) Bomb Trial Center Chest":             "Boomerang",
+        "[LC] (3F) Merge Trial Free Chest":              "Compass",
+        "[LC] (3F) Spike Ball Chest":                    "Small Key",
+        "[LC] (4F) Center":                              "Silver Rupee",
+        "[LC] (4F) Eyeball Chest":                       "Lost Maiamai",
+        "[LC] (4F) Hidden Path":                         "Small Key",
+        "[LC] (4F) Lamp Trial Chest":                    "Lost Maiamai",
+        "[LC] (4F) Lava Switch Chest":                   "Small Key"
+      },
+      "Skull Woods": {
+        "Skull Woods Outdoor Chest":                     "Purple Rupee",
+        "Skull Woods Prize":                             "Sage Gulley",
+        "[SW] (B1) Big Chest (Eyes)":                    "Lost Maiamai",
+        "[SW] (B1) Big Chest (Upper)":                   "Lost Maiamai",
+        "[SW] (B1) Gibdo Room (Hole)":                   "Small Key",
+        "[SW] (B1) Gibdo Room (Lower)":                  "Small Key",
+        "[SW] (B1) Grate Room":                          "Big Key",
+        "[SW] (B1) South Chest":                         "Small Key",
+        "[SW] (B2) Moving Platform Room":                "Compass",
+        "[SW] Knucklemaster":                            "Sword Upgrade"
+      },
+      "Swamp Palace": {
+        "Swamp Palace Prize":                            "Sage Rosso",
+        "[SP] (1F) Big Chest (Fire)":                    "Big Key",
+        "[SP] (1F) East Room":                           "Small Key",
+        "[SP] (1F) Water Puzzle":                        "Small Key",
+        "[SP] (1F) West Room":                           "Silver Rupee",
+        "[SP] (B1) Big Chest (Secret)":                  "Piece of Heart",
+        "[SP] (B1) Center":                              "Compass",
+        "[SP] (B1) Gyorm":                               "Master Ore",
+        "[SP] (B1) Raft Room (Left)":                    "Great Spin",
+        "[SP] (B1) Raft Room (Pillar)":                  "Small Key",
+        "[SP] (B1) Raft Room (Right)":                   "Small Key",
+        "[SP] (B1) Waterfall Room":                      "Silver Rupee",
+        "[SP] Arrghus":                                  "Piece of Heart"
+      },
+      "Thieves' Hideout": {
+        "Stalblind":                                     "Lost Maiamai",
+        "Thieves' Hideout Prize":                        "Sage Osfala",
+        "[T'H] (B1) Behind Wall":                        "Big Key",
+        "[T'H] (B1) Big Chest (Entrance)":               "Compass",
+        "[T'H] (B1) Grate Chest":                        "Small Key",
+        "[T'H] (B1) Jail Cell":                          "Armor Upgrade",
+        "[T'H] (B2) Eyegores":                           "Tornado Rod",
+        "[T'H] (B2) Grate Chest (Fall)":                 "Lost Maiamai",
+        "[T'H] (B2) Jail Cell":                          "Silver Rupee",
+        "[T'H] (B2) Switch Puzzle Room":                 "Silver Rupee",
+        "[T'H] (B3) Big Chest (Hidden)":                 "Lost Maiamai",
+        "[T'H] (B3) Underwater":                         "Heart Container"
+      },
+      "Tower of Hera": {
+        "Tower of Hera Prize":                           "Pendant of Courage Upgrade",
+        "[TH] (11F) Big Chest":                          "Piece of Heart",
+        "[TH] (1F) Center":                              "Sand Rod",
+        "[TH] (1F) Outside":                             "Small Key",
+        "[TH] (3F) Platform":                            "Lost Maiamai",
+        "[TH] (5F) Red/Blue Switches":                   "Big Key",
+        "[TH] (6F) Left Mole":                           "Small Key",
+        "[TH] (6F) Right Mole":                          "Lost Maiamai",
+        "[TH] (7F) Outside (Ledge)":                     "Compass",
+        "[TH] (8F) Fairy Room":                          "Sword Upgrade",
+        "[TH] Moldorm":                                  "Lost Maiamai"
+      },
+      "Turtle Rock": {
+        "Turtle Rock Left Balcony":                      "Hookshot",
+        "Turtle Rock Prize":                             "Sage Impa",
+        "[TR] (1F) Center":                              "Monster Guts",
+        "[TR] (1F) Defeat Flamolas":                     "Small Key",
+        "[TR] (1F) Grate Chest":                         "Silver Rupee",
+        "[TR] (1F) Northeast Ledge":                     "Small Key",
+        "[TR] (1F) Portal Room NW":                      "Net",
+        "[TR] (1F) Southeast Chest":                     "Purple Rupee",
+        "[TR] (1F) Under Center":                        "Silver Rupee",
+        "[TR] (B1) Big Chest (Center)":                  "Gold Rupee",
+        "[TR] (B1) Big Chest (Top)":                     "Silver Rupee",
+        "[TR] (B1) Grate Chest (Small)":                 "Big Key",
+        "[TR] (B1) Northeast Room":                      "Lost Maiamai",
+        "[TR] (B1) Platform":                            "Small Key",
+        "[TR] (B1) Under Center":                        "Gold Rupee",
+        "[TR] Grinexx":                                  "Compass"
+      }
+    }
+  },
+  "metrics": {
+    "spheres":                                           9,
+    "playthrough": {
+      "Sphere 00": {
+        "Dampe":                                         "Bow of Light",
+        "Dark Ruins Lakeview Chest":                     "Zora's Flippers",
+        "Eastern Ruins Merge Chest":                     "Empty Bottle",
+        "Hinox (5)":                                     "Stamina Scroll",
+        "Hinox (6)":                                     "Fire Rod",
+        "Kakariko Item Shop (1)":                        "Scoot Fruit",
+        "Lakeside Item Shop (1)":                        "Scoot Fruit",
+        "Ravio (5)":                                     "Bell",
+        "Ravio (9)":                                     "Bombs",
+        "[EP] (1F) Merge Chest":                         "Eastern Palace Small Key",
+        "[Mai] Dark Ruins South Area Wall":              "Bow",
+        "[Mai] Eastern Ruins Wall":                      "Empty Bottle",
+        "[Mai] Lorule Haunted Grove Wall":               "Premium Milk",
+        "[Mai] Lorule Lake West Wall":                   "Lamp",
+        "[Mai] Lost Woods Bush":                         "Smooth Gem",
+        "[Mai] Misery Mire Wall":                        "Net",
+        "[Mai] Sanctuary Wall":                          "Armor Upgrade",
+        "[T'H] (B1) Grate Chest":                        "Thieves' Hideout Small Key",
+        "[T'H] (B1) Jail Cell":                          "Armor Upgrade"
+      },
+      "Sphere 01": {
+        "Bird Lover":                                    "Ice Rod",
+        "Mysterious Man":                                "Golden Bee",
+        "Southeastern Shore":                            "Master Ore",
+        "Waterfall Cave":                                "Boomerang",
+        "[EP] (1F) Left Door Chest":                     "Eastern Palace Small Key",
+        "[EP] (1F) Popo Room":                           "Eastern Palace Big Key",
+        "[EP] (2F) Defeat Popos":                        "Ice Rod",
+        "[HS] Ledge":                                    "Hyrule Sanctuary Small Key",
+        "[Mai] Skull Woods Grass":                       "Fire Rod",
+        "[PD] (1F) Left Pit":                            "Dark Palace Small Key",
+        "[SW] (B1) Gibdo Room (Lower)":                  "Skull Woods Small Key",
+        "[SW] (B1) South Chest":                         "Skull Woods Small Key"
+      },
+      "Sphere 02": {
+        "Eastern Palace Prize":                          "Pendant of Power",
+        "Turtle Rock Left Balcony":                      "Hookshot",
+        "[EP] (2F) Big Chest":                           "Lamp",
+        "[EP] (3F) Escape Chest":                        "Hammer",
+        "[EP] Yuga (1)":                                 "Strength Upgrade",
+        "[PD] (1F) Hidden Room (Lower)":                 "Dark Palace Small Key",
+        "[PD] (1F) Hidden Room (Upper)":                 "Dark Palace Big Key",
+        "[PD] (B1) Helmasaur Room":                      "Dark Palace Small Key",
+        "[PD] (B1) Maze":                                "Dark Palace Small Key",
+        "[SW] (B1) Gibdo Room (Hole)":                   "Skull Woods Small Key",
+        "[SW] (B1) Grate Room":                          "Skull Woods Big Key",
+        "[TR] (1F) Defeat Flamolas":                     "Turtle Rock Small Key",
+        "[TR] (1F) Northeast Ledge":                     "Turtle Rock Small Key",
+        "[TR] (1F) Portal Room NW":                      "Net",
+        "[TR] (B1) Grate Chest (Small)":                 "Turtle Rock Big Key",
+        "[TR] (B1) Platform":                            "Turtle Rock Small Key"
+      },
+      "Sphere 03": {
+        "Dark Palace Prize":                             "Sage Irene",
+        "Death Mountain Treasure Dungeon":               "Master Ore",
+        "Death Mountain West Highest Cave":              "Hammer",
+        "Eastern Ruins Peg Circle":                      "Pegasus Boots",
+        "Lorule Mountain W Ledge":                       "Bombs",
+        "Rosso Cave":                                    "Sword Upgrade",
+        "Skull Woods Prize":                             "Sage Gulley",
+        "Spectacle Rock":                                "Sword Upgrade",
+        "Turtle Rock Prize":                             "Sage Impa",
+        "[IR] (1F) Hidden Chest":                        "Ice Ruins Big Key",
+        "[IR] (B5) Big Chest":                           "Ice Ruins Small Key",
+        "[SP] (B1) Gyorm":                               "Master Ore",
+        "[SP] (B1) Raft Room (Left)":                    "Great Spin",
+        "[SP] (B1) Raft Room (Pillar)":                  "Swamp Palace Small Key",
+        "[SP] (B1) Raft Room (Right)":                   "Swamp Palace Small Key",
+        "[SW] Knucklemaster":                            "Sword Upgrade",
+        "[T'H] (B2) Eyegores":                           "Tornado Rod",
+        "[TH] (1F) Center":                              "Sand Rod",
+        "[TH] (1F) Outside":                             "Tower of Hera Small Key"
+      },
+      "Sphere 04": {
+        "Great Rupee Fairy":                             "Empty Bottle",
+        "Hyrule Castle Prize":                           "Sage Seres",
+        "Sacred Realm":                                  "Triforce",
+        "[DP] (1F) Entrance":                            "Bow",
+        "[DP] (1F) Sand Room (North)":                   "Desert Palace Small Key",
+        "[DP] (1F) Sand Switch Room":                    "Desert Palace Big Key",
+        "[HG] (1F) Fire Bubbles":                        "Bracelet Upgrade",
+        "[HG] (1F) Switch Room":                         "House of Gales Big Key",
+        "[HG] (1F) Torches":                             "House of Gales Small Key",
+        "[IR] (B1) Narrow Ledge":                        "Ice Ruins Small Key",
+        "[LC] (1F) Center":                              "Lorule Castle Small Key",
+        "[LC] (1F) Ledge":                               "Lorule Castle Small Key",
+        "[LC] (2F) Near Torches":                        "Hylian Shield",
+        "[LC] (3F) Big Bomb Flower Chest":               "Strength Upgrade",
+        "[LC] (3F) Bomb Trial Center Chest":             "Boomerang",
+        "[LC] (3F) Spike Ball Chest":                    "Lorule Castle Small Key",
+        "[Mai] Atop Eastern Rocks":                      "Empty Bottle",
+        "[Mai] Eastern Ruins Green Tree":                "Sand Rod",
+        "[SP] (1F) Big Chest (Fire)":                    "Swamp Palace Big Key",
+        "[SP] (1F) East Room":                           "Swamp Palace Small Key",
+        "[SP] (1F) Water Puzzle":                        "Swamp Palace Small Key",
+        "[T'H] (B1) Behind Wall":                        "Thieves' Hideout Big Key",
+        "[TH] (5F) Red/Blue Switches":                   "Tower of Hera Big Key",
+        "[TH] (6F) Left Mole":                           "Tower of Hera Small Key"
+      },
+      "Sphere 05": {
+        "Swamp Palace Prize":                            "Sage Rosso",
+        "Thieves' Hideout Prize":                        "Sage Osfala",
+        "Tower of Hera Prize":                           "Pendant of Courage Upgrade",
+        "[DP] (1F) Behind Rocks":                        "Desert Palace Small Key",
+        "[HG] (1F) West Room":                           "House of Gales Small Key",
+        "[HG] (2F) Narrow Ledge":                        "House of Gales Small Key",
+        "[IR] (B3) Big Chest (Puzzle)":                  "Hookshot",
+        "[IR] (B4) Narrow Platform":                     "Ice Ruins Small Key",
+        "[LC] (4F) Hidden Path":                         "Lorule Castle Small Key",
+        "[LC] (4F) Lava Switch Chest":                   "Lorule Castle Small Key",
+        "[LS] Upper Chest":                              "Lorule Sanctuary Small Key",
+        "[TH] (8F) Fairy Room":                          "Sword Upgrade"
+      },
+      "Sphere 06": {
+        "Ice Ruins Prize":                               "Pendant of Courage Upgrade",
+        "[DP] (2F) Big Chest (Puzzle)":                  "Desert Palace Small Key",
+        "[DP] (2F) Under Rock (Ball Room)":              "Desert Palace Small Key",
+        "[DP] (2F) Under Rock (Left)":                   "Desert Palace Small Key",
+        "[HG] (2F) Fire Ring":                           "House of Gales Small Key"
+      },
+      "Sphere 07": {
+        "Desert Palace Prize":                           "Pendant of Wisdom",
+        "House of Gales Prize":                          "Sage Oren",
+        "[DP] (3F) Armos Room":                          "Master Ore"
+      },
+      "Sphere 08": {
+        "Blacksmith (Lorule)":                           "Bracelet Upgrade",
+        "Master Sword Pedestal":                         "Tornado Rod"
+      }
+    }
+  },
+  "hints": {
+    "path_hints": [
+      {
+        "hint":                                          "Dark Ruins is on the path to Margomill",
+        "ghosts": [
+          "Swamp Palace Outside Right Ghost",
+          "Hyrule Graveyard Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Turtle Rock is on the path to Arrghus",
+        "ghosts": [
+          "Turtle Bullied Ghost",
+          "Fire Cave Ghost"
+        ]
+      }
+    ],
+    "always_hints": [
+      {
+        "hint":                                          "Master Sword Pedestal has the Tornado Rod.",
+        "ghosts": [
+          "Skull Woods Cuccos Ghost",
+          "Lorule Graveyard Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Great Rupee Fairy has an Empty Bottle.",
+        "ghosts": [
+          "StreetPass Tree Ghost",
+          "Dark Ruins North Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Blacksmith (Lorule) has a Bracelet Upgrade.",
+        "ghosts": [
+          "Lorule Rupee Rush Ghost",
+          "Behind Blacksmith Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Bouldering Guy has a Gold Rupee.",
+        "ghosts": [
+          "Sanctuary Ghost",
+          "Graveyard Ledge Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Irene has the Bee Badge.",
+        "ghosts": [
+          "Misery Mire Ledge Ghost",
+          "Skull Woods South Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Rosso has a Lost Maiamai.",
+        "ghosts": [
+          "Lost Woods Ghost",
+          "Veteran Thief Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Osfala has a Piece of Heart.",
+        "ghosts": [
+          "Dark Palace Outside Ghost",
+          "Hyrule Hotfoot Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Wildlife Clearing Stump has a Lost Maiamai.",
+        "ghosts": [
+          "Eastern Ruins Entrance Ghost",
+          "Desert Center Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Queen Oren has a Silver Rupee.",
+        "ghosts": [
+          "Southern Bridge Ghost",
+          "Kakariko Well Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Hyrule Castle Battlement has a Lost Maiamai.",
+        "ghosts": [
+          "House of Gales Island Ghost",
+          "Outside Tower of Hera Ghost"
+        ]
+      }
+    ],
+    "sometimes_hints": [
+      {
+        "hint":                                          "Spectacle Rock has a Sword Upgrade.",
+        "ghosts": [
+          "Dark Maze Ghost",
+          "Hyrule Castle Rocks Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Donkey Cave Pegs has a Silver Rupee.",
+        "ghosts": [
+          "Octoball Derby Ghost",
+          "Blacksmith Cave Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[LC] (3F) Spike Ball Chest has a Lorule Castle Small Key.",
+        "ghosts": [
+          "Floating Island Ghost",
+          "Desert South West Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[LC] (4F) Lamp Trial Chest has a Lost Maiamai.",
+        "ghosts": [
+          "Lorule Fortune-Teller Ghost",
+          "Treacherous Tower Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Ku's Domain Water has a Purple Rupee.",
+        "ghosts": [
+          "Misery Mire Bridge Ghost",
+          "Swamp Palace Outside Left Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Zelda has a Lost Maiamai.",
+        "ghosts": [
+          "Zora's Domain Ghost",
+          "Ice Ruins Outside Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Near Lorule Fortune-Teller has a Purple Rupee.",
+        "ghosts": [
+          "Great Rupee Fairy Ghost",
+          "Hyrule Rupee Rush Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Lorule Graveyard Tree has a Piece of Heart.",
+        "ghosts": [
+          "Stylish Woman Ghost",
+          "Desert East Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[HG] (2F) Fire Ring has a House of Gales Small Key.",
+        "ghosts": [
+          "Southern Ruins Ghost",
+          "Turtle Rock Outside Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Philosopher's Cave has a Lost Maiamai.",
+        "ghosts": [
+          "Dodge the Cuccos Ghost",
+          "Eastern Ruins Cave Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Lorule Lake Skull has a Lost Maiamai.",
+        "ghosts": [
+          "Lost Woods Maze Ghost 3",
+          "Lost Woods Maze Ghost 1"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Southern Ruins Bomb Cave has a Lost Maiamai.",
+        "ghosts": [
+          "Lost Woods Maze Ghost 2",
+          "Turtle Wall Ghost"
+        ]
+      },
+      {
+        "hint":                                          "Woman has a Silver Rupee.",
+        "ghosts": [
+          "Moldorm Cave Ghost",
+          "Waterfall Cave Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Kakariko Sand has a Silver Rupee.",
+        "ghosts": [
+          "Letter in a Bottle Ghost",
+          "Eastern Ruins Pegs Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[DP] (2F) Under Rock (Ball Room) has a Desert Palace Small Key.",
+        "ghosts": [
+          "Hyrule Fortune-Teller Ghost",
+          "Spectacle Rock Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[DP] (2F) Under Rock (Right) has the Desert Palace Compass.",
+        "ghosts": [
+          "Witch's House Ghost",
+          "Shady Guy Ghost"
+        ]
+      },
+      {
+        "hint":                                          "[Mai] Skull Woods Big Rock has a Piece of Heart.",
+        "ghosts": [
+          "Vacant House Ghost",
+          "Fortune's Choice Ghost"
+        ]
+      }
+    ],
+    "bow_of_light_hint":                                 "Did you find the Bow of Light in Graveyard?"
+  }
+}
