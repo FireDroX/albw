@@ -1,0 +1,36 @@
+.runInfos-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--text25);
+}
+
+.runInfos-place {
+  width: 2rem;
+  text-align: center;
+  font-size: 24px;
+  color: var(--text45);
+}
+
+.runInfos-time {
+  width: 7.5rem;
+  font-size: 16px;
+  text-align: start;
+  color: var(--text85);
+}
+
+.runInfos-seed {
+  width: 6rem;
+  font-size: 14px;
+  color: var(--text35);
+  text-decoration: underline solid;
+}
+
+.runInfos-spoilers {
+  font-style: italic;
+}
+
+.runInfos-spoilers:hover {
+  cursor: pointer;
+}

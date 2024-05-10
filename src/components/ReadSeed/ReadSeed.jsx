@@ -1,11 +1,13 @@
 import "./ReadSeed.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { items, itemsImg } from "../../utils/items";
+import { RunContext } from "../../utils/RunContext";
 
 const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const { layout, seed, version } = data;
+  const { setIsClicked } = useContext(RunContext);
   const [itemIndex, setItemIndex] = useState(0);
 
   const navigate = useNavigate();
@@ -13,6 +15,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const handleNavigate = () => {
     navigate("/albw/" + where);
     reset(undefined);
+    setIsClicked({ clicked: false, index: 0 });
   };
 
   function findLocationOfItemsInLayout(itemsName) {
