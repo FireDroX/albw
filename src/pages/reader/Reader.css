@@ -1,0 +1,66 @@
+.reader-imports {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.reader-imports > h4 {
+  color: var(--text55);
+}
+
+.custum-file-upload,
+.reader-dnd {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--text85);
+  background-color: var(--primary5);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.reader-dnd {
+  border: 2px dashed var(--text85);
+}
+
+.reader-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reader-icon svg {
+  height: 80px;
+  scale: 5;
+  fill: var(--text75);
+  color: var(--text75);
+}
+
+.reader-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reader-txt span {
+  font-weight: 400;
+  color: var(--text55);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+@media (max-width: 730px) {
+  .reader-imports {
+    flex-direction: column;
+  }
+}
