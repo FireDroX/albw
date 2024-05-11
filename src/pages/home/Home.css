@@ -1,0 +1,46 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-title > h5 {
+  color: var(--text85);
+  margin: 0;
+}
+
+.home-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.home-imgs {
+  margin-inline: 3rem;
+  position: fixed;
+  bottom: 35px;
+  padding: 1.5rem 2rem;
+  background-color: var(--primary5);
+  border: solid 2px var(--secondary5);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 55px;
+}
+
+.home-imgs > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-imgs > a > img {
+  border-radius: 25px;
+}
