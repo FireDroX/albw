@@ -28,7 +28,7 @@
 [![Discord][discord-icon]][discord-url]
 
 > [!WARNING]
-> Personal project ! Work with the version 0.3.1 of [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but might not work with older/newer versions !
+> This is a personal project! It is designed to work with version 0.3.1 of the [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but may not be compatible with older or newer versions.
 
 ## Features
 
@@ -36,7 +36,7 @@
 
 ### Reader
 
-Read your own spoiler logs file by uploading it locally to the webpage !
+Upload your own spoiler log file locally to the webpage to read it.
 
 <div align="center">
     <img src="src/assets/example/example_reader.png" alt="Reader"/>
@@ -49,7 +49,7 @@ Read your own spoiler logs file by uploading it locally to the webpage !
 
 ### Best
 
-Look at my best runs all done with a [Fast](src/utils/presets/Fast.json) preset. And view the spoiler logs too !
+Check out my top runs, all completed using the [Fast](src/utils/presets/Fast.json) preset. You can also view the spoiler logs!
 
 <div align="center">
   <img src="src/assets/example/example_best.png" alt="Example" />
