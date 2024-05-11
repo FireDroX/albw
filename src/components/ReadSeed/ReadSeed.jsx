@@ -47,7 +47,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
       <div className="read-values">
         <div className="read-infos">
           <small style={{ color: "var(--text45)" }}>
-            SEED :<span className="location-info">{seed}</span> ; VERSION :{" "}
+            SEED : <span className="location-info">{seed}</span> ; VERSION :{" "}
             <span className="location-info">{version}</span>
           </small>
         </div>
