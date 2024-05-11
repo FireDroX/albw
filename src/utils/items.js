@@ -2,7 +2,7 @@ import bee_badge from "../assets/images/bee_badge.png";
 import bell from "../assets/images/bell.png";
 import bombs from "../assets/images/bombs.png";
 import boomerang from "../assets/images/boomerang.png";
-import bottle_letter from "../assets/images/bottle_letter.png";
+import bottle_trade from "../assets/images/bottle_trade.png";
 import bottle from "../assets/images/bottle.png";
 import bow from "../assets/images/bow.png";
 import bow_light from "../assets/images/bow_light.png";
@@ -50,7 +50,7 @@ export const itemsImg = [
   net,
   hint_glasses,
   bottle,
-  bottle_letter,
+  bottle_trade,
   bee_badge,
   bracelet,
   master_ore,
@@ -82,7 +82,7 @@ export const items = [
   ["Net"],
   ["Hint Glasses"],
   ["Empty Bottle"],
-  ["Letter in a Bottle"],
+  ["Letter in a Bottle", "Premium Milk"],
   ["Bee Badge"],
   ["Bracelet Upgrade"],
   ["Master Ore"],
