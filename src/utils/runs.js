@@ -47,4 +47,8 @@ export const fast = [
     data: require("./logs/fast/3h50m42.04s_1029320108_spoiler.json"),
     name: "3h50m42.04s_1029320108",
   },
+  {
+    data: require("./logs/fast/2h46m10.84s_2006808928_spoiler.json"),
+    name: "2h46m10.84s_2006808928",
+  },
 ];
