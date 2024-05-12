@@ -34,7 +34,7 @@ const Reader = () => {
                         try {
                           const newData = JSON.parse(event.target.result);
                           let dontPass = false;
-                          ["seed", "version", "layout"].forEach((prop) => {
+                          ["seed", "layout"].forEach((prop) => {
                             if (!newData.hasOwnProperty(prop)) {
                               dontPass = true;
                             }
@@ -67,7 +67,7 @@ const Reader = () => {
                     try {
                       const newData = JSON.parse(event.target.result);
                       let dontPass = false;
-                      ["seed", "version", "layout"].forEach((prop) => {
+                      ["seed", "layout"].forEach((prop) => {
                         if (!newData.hasOwnProperty(prop)) {
                           dontPass = true;
                         }

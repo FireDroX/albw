@@ -5,7 +5,7 @@ import { FaTrophy } from "react-icons/fa";
 import { RunContext } from "../../utils/RunContext";
 import ReadSeed from "../ReadSeed/ReadSeed";
 
-const RunInfos = ({ place, data, name, index }) => {
+const RunInfos = ({ place, data, name, date, index }) => {
   const { setIsClicked } = useContext(RunContext);
   const [spoilers, setSpoilers] = useState(false);
 
@@ -15,6 +15,29 @@ const RunInfos = ({ place, data, name, index }) => {
   const handleSpoilers = () => {
     setSpoilers(!spoilers);
     setIsClicked({ clicked: true, index: index });
+  };
+
+  const compareDate = (time) => {
+    let currentDate = new Date();
+
+    let timeDifference = Math.abs(currentDate.getTime() - time);
+    let secondsDifference = Math.floor(timeDifference / 1000);
+
+    if (secondsDifference < 60) {
+      return "now";
+    } else if (secondsDifference < 3600) {
+      let minutesDifference = Math.floor(secondsDifference / 60);
+      return minutesDifference + " min(s) ago";
+    } else if (secondsDifference < 86400) {
+      let hoursDifference = Math.floor(secondsDifference / 3600);
+      return hoursDifference + " hour(s) ago";
+    } else if (secondsDifference < 31536000) {
+      let daysDifference = Math.floor(secondsDifference / 86400);
+      return daysDifference + " day(s) ago";
+    } else {
+      let yearsDifference = Math.floor(secondsDifference / 31536000);
+      return yearsDifference + " year(s) ago";
+    }
   };
 
   return !spoilers ? (
@@ -38,6 +61,8 @@ const RunInfos = ({ place, data, name, index }) => {
       </small>
       {" - "}
       <small className="runInfos-seed">{seed}</small>
+      {" - "}
+      <small className="runInfos-date">{compareDate(date.getTime())}</small>
       {" - "}
       <small className="runInfos-spoilers" onClick={handleSpoilers}>
         SPOILERS

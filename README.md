@@ -28,7 +28,7 @@
 [![Discord][discord-icon]][discord-url]
 
 > [!WARNING]
-> This is a personal project! It is designed to work with version 0.3.1 of the [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but may not be compatible with older or newer versions.
+> This is a personal project! It is designed to work with version 0.3.1 and 0.4.0 of the [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but may not be compatible with older versions.
 
 ## Features
 
