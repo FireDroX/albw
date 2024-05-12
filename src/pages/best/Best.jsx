@@ -43,6 +43,7 @@ const Best = () => {
                   <RunInfos
                     data={run.data}
                     name={run.name}
+                    date={run.date}
                     place={i + 1}
                     index={i}
                     key={i}

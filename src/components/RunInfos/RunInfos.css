@@ -4,6 +4,7 @@
   gap: 0.5rem;
   align-items: center;
   color: var(--text25);
+  flex-wrap: wrap;
 }
 
 .runInfos-place {
@@ -33,4 +34,15 @@
 
 .runInfos-spoilers:hover {
   cursor: pointer;
+}
+
+.runInfos-date {
+  width: 6rem;
+}
+
+@media (max-width: 600px) {
+  .runInfos-container {
+    justify-content: center;
+    scale: 0.8;
+  }
 }
