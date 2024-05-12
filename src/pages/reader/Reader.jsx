@@ -9,6 +9,36 @@ import ReadSeed from "../../components/ReadSeed/ReadSeed";
 const Reader = () => {
   const [file, setFile] = useState(undefined);
 
+  const handleFile = (f, e) => {
+    // Just some file infos
+    console.log("File name: %c" + e.name, "color: #42f578");
+    console.log("Last modified: %c" + e.lastModifiedDate, "color: #42f578");
+    console.log("\nSeed: %c" + f.seed || "Not Found", "color: #42f578");
+    console.log("Version: %c" + f.version || "Not Found", "color: #42f578");
+    console.log("Hash: %c" + f.hash || "Not Found", "color: #42f578");
+    console.log(
+      "Settings: \n%c" + JSON.stringify(f.settings, null, 2) || "Not Found",
+      "color: #42f578"
+    );
+    console.log(
+      "Exclusions: \n%c" + JSON.stringify(f.full_exclusions, null, 2) ||
+        "Not Found",
+      "color: #42f578"
+    );
+    console.log(
+      "Treacherous tower floors: \n%c" +
+        JSON.stringify(f.treacherous_tower_floors, null, 2) || "Not Found",
+      "color: #42f578"
+    );
+    console.log(
+      "Trials config: \n%c" + JSON.stringify(f.trials_config, null, 2) ||
+        "Not Found",
+      "color: #42f578"
+    );
+
+    setFile(f);
+  };
+
   return (
     <section className="App">
       <div>
@@ -39,7 +69,7 @@ const Reader = () => {
                               dontPass = true;
                             }
                           });
-                          if (!dontPass) setFile(newData);
+                          if (!dontPass) handleFile(newData, file);
                           else alert("Required properties are missing.");
                         } catch (error) {
                           alert("Error parsing JSON: " + error);
@@ -72,7 +102,7 @@ const Reader = () => {
                           dontPass = true;
                         }
                       });
-                      if (!dontPass) setFile(newData);
+                      if (!dontPass) handleFile(newData, droppedFile);
                       else alert("Required properties are missing.");
                     } catch (error) {
                       alert("Error parsing JSON: " + error);

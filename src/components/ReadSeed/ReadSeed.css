@@ -5,7 +5,7 @@
   align-items: end;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-block: 1rem;
+  margin-bottom: 3rem;
 }
 
 .read-values {
