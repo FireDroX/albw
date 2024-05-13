@@ -15,6 +15,7 @@
     <a href="#features">Features</a>
     <ul>
       <li><a href="#reader">Reader</a></li>
+      <li><a href="#preset">Preset</a></li>
       <li><a href="#best">Best runs</a></li>
     </ul>
   </li>
@@ -41,6 +42,18 @@ Upload your own spoiler log file locally to the webpage to read it.
 <div align="center">
     <img src="src/assets/example/example_reader.png" alt="Reader"/>
     <img src="src/assets//example//example_logs.png"/>
+</div>
+
+<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
+
+---
+
+### Preset
+
+Create custom presets in just a few clicks and modify them at any time.
+
+<div align="center">
+    <img src="src/assets/example/example_preset.png" alt="Preset"/>
 </div>
 
 <p align="right">(<a href="#readme-top">Top of the page</a>)</p>

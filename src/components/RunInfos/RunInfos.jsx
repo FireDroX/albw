@@ -60,9 +60,11 @@ const RunInfos = ({ place, data, name, date, index }) => {
         })}
       </small>
       {" - "}
-      <small className="runInfos-seed">{seed}</small>
-      {" - "}
       <small className="runInfos-date">{compareDate(date.getTime())}</small>
+      {" - "}
+      <small className="runInfos-date">{data.version || "Unknown"}</small>
+      {" - "}
+      <small className="runInfos-seed">{seed}</small>
       {" - "}
       <small className="runInfos-spoilers" onClick={handleSpoilers}>
         SPOILERS

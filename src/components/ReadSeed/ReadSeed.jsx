@@ -19,7 +19,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/albw/" + where);
+    navigate(`/albw?page=${where}`);
     reset(undefined);
     setIsClicked({ clicked: false, index: 0 });
   };
