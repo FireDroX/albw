@@ -5,11 +5,13 @@ import { useNavigate } from "react-router-dom";
 import { RunContext } from "../../utils/RunContext";
 
 import { FaEye, FaTrophy } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa6";
 
 const logo = require("../../assets/logo.png");
 
 const componentsMap = {
   Reader: FaEye,
+  Preset: FaDatabase,
   Best: FaTrophy,
 };
 
@@ -34,7 +36,7 @@ const Navbar = () => {
         />
       </div>
 
-      {["Reader", "Best"].map((el, i) => (
+      {["Reader", "Preset", "Best"].map((el, i) => (
         <div onClick={() => handleNavigate(el.toLowerCase())} key={el + i}>
           <h5>{el}</h5>
           {createElement(componentsMap[el])}
