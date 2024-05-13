@@ -1,6 +1,6 @@
 import "./App.css";
-import { Suspense, lazy, createElement } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Suspense, lazy, useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,40 +9,37 @@ const Home = lazy(() => import("./pages/home/Home"));
 const Reader = lazy(() => import("./pages/reader/Reader"));
 const Best = lazy(() => import("./pages/best/Best"));
 
-const componentsMap = {
-  Reader: Reader,
-  Best: Best,
-};
-
 function App() {
+  function DynamicPage() {
+    const [page, setPage] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+      const queryParams = new URLSearchParams(location.search);
+      setPage(queryParams.get("page"));
+    }, [location]);
+
+    switch (page) {
+      case "reader":
+        return <Reader />;
+      case "best":
+        return <Best />;
+      default:
+        return <Home />;
+    }
+  }
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route
           path="/albw"
           element={
             <Suspense fallback={<Loader />}>
-              <Home />
+              <DynamicPage />
             </Suspense>
           }
         />
-
-        {["Reader", "Best"].map((el, i) => (
-          <Route
-            path={"/albw/" + el.toLowerCase()}
-            key={el + i}
-            element={
-              <Suspense fallback={<Loader />}>
-                {createElement(componentsMap[el])}
-              </Suspense>
-            }
-          />
-        ))}
-
-        {/* REDIRECT WHEN NOT A PATH */}
-        <Route path="*" element={<Navigate to="/albw" />} />
       </Routes>
     </>
   );

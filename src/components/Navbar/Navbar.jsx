@@ -18,7 +18,7 @@ const Navbar = () => {
   const { setIsClicked } = useContext(RunContext);
 
   const handleNavigate = (goTo = String) => {
-    navigate("/albw/" + goTo);
+    navigate(`/albw?page=${goTo}`);
     document.title = "ALBW - " + goTo.toString().toUpperCase();
     if (goTo !== "best") setIsClicked({ clicked: false, index: 0 });
   };
