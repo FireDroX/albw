@@ -67,8 +67,8 @@ const Preset = () => {
       current = 0;
     array.map((pages) => (count += pages.length));
     array.splice(0, infosIndex.category + 1).map((pages, i) => {
-      if (infosIndex.category > i) current += pages.length;
-      else current += pages.splice(0, infosIndex.setting + 1).length;
+      if (infosIndex.category > i) return (current += pages.length);
+      else return (current += pages.splice(0, infosIndex.setting + 1).length);
     });
     return `${current}/${count}`;
   };
@@ -86,6 +86,8 @@ const Preset = () => {
       case "select":
         const d = getPresetInfos()[categoryIndex][settingIndex];
         return d.choises?.indexOf(value) + (d.adder || 0);
+      default:
+        return;
     }
   };
 
