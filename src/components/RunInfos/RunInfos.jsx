@@ -2,11 +2,11 @@ import "./RunInfos.css";
 import { useState, useContext } from "react";
 
 import { FaTrophy } from "react-icons/fa";
-import { RunContext } from "../../utils/RunContext";
+import { PageContext } from "../../utils/contexts/PageContext";
 import ReadSeed from "../ReadSeed/ReadSeed";
 
 const RunInfos = ({ place, data, name, date, index }) => {
-  const { setIsClicked } = useContext(RunContext);
+  const { setIsClicked } = useContext(PageContext);
   const [spoilers, setSpoilers] = useState(false);
 
   const time = name.split("_")[0];

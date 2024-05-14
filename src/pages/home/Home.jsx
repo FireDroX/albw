@@ -1,9 +1,12 @@
 import "./Home.css";
+import { useContext } from "react";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 import logo from "../../assets/logo.png";
 import bow_light from "../../assets/images/bow_light.png";
 
 const Home = () => {
+  const { locale } = useContext(PageContext);
   return (
     <section className="App">
       <div>
@@ -33,8 +36,9 @@ const Home = () => {
             </a>
           </div>
           <div className="home-title">
-            <h5>A Link Between Worlds</h5>
-            <h5>Spoilers Logs Reader 📄</h5>
+            {locale?.home?.title?.map((text, i) => (
+              <h5 key={i}>{text}</h5>
+            ))}
           </div>
         </div>
         <div className="home-imgs">

@@ -1,23 +1,17 @@
 import "./Navbar.css";
 
-import { createElement, useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { RunContext } from "../../utils/RunContext";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 import { FaEye, FaTrophy } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa6";
 
 const logo = require("../../assets/logo.png");
 
-const componentsMap = {
-  Reader: FaEye,
-  Preset: FaDatabase,
-  Best: FaTrophy,
-};
-
 const Navbar = () => {
   const navigate = useNavigate();
-  const { setIsClicked } = useContext(RunContext);
+  const { setIsClicked, locale } = useContext(PageContext);
 
   const handleNavigate = (goTo = String) => {
     navigate(`/albw?page=${goTo}`);
@@ -36,12 +30,18 @@ const Navbar = () => {
         />
       </div>
 
-      {["Reader", "Preset", "Best"].map((el, i) => (
-        <div onClick={() => handleNavigate(el.toLowerCase())} key={el + i}>
-          <h5>{el}</h5>
-          {createElement(componentsMap[el])}
-        </div>
-      ))}
+      <div onClick={() => handleNavigate("reader")}>
+        <h5>{locale.nav.reader}</h5>
+        <FaEye />
+      </div>
+      <div onClick={() => handleNavigate("preset")}>
+        <h5>{locale.nav.preset}</h5>
+        <FaDatabase />
+      </div>
+      <div onClick={() => handleNavigate("best")}>
+        <h5>{locale.nav.best}</h5>
+        <FaTrophy />
+      </div>
     </div>
   );
 };

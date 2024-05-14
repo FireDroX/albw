@@ -5,10 +5,10 @@ import { fast } from "../../utils/runs";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import RunInfos from "../../components/RunInfos/RunInfos";
 import preset from "../../utils/presets/Fast.json";
-import { RunContext } from "../../utils/RunContext";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 const Best = () => {
-  const { isClicked } = useContext(RunContext);
+  const { isClicked, locale } = useContext(PageContext);
   const [viewMore, setViewMore] = useState(5);
   const filteredRuns = fast.sort((a, b) => {
     return (
@@ -22,7 +22,7 @@ const Best = () => {
       <div>
         <div className="best-page">
           <small>
-            All done with a{" "}
+            {locale.best.info1}
             <a
               href={`data:text/json;charset=uft-8,${encodeURIComponent(
                 JSON.stringify(preset, null, 2)
@@ -30,10 +30,11 @@ const Best = () => {
               target="_blank"
               rel="noreferrer"
               download={"Fast.json"}
+              style={{ color: "var(--text85)" }}
             >
-              Fast
+              {locale.best.link}
             </a>{" "}
-            preset (click "Fast" to download the preset)
+            {locale.best.info2}
           </small>
           <div className="best-container">
             {filteredRuns
@@ -54,7 +55,7 @@ const Best = () => {
           {isClicked.clicked ? undefined : viewMore === undefined ? (
             <div className="best-viewMore">
               <small className="best-viewMore" onClick={() => setViewMore(5)}>
-                View less <FaArrowUp />
+                {locale.best.viewLess} <FaArrowUp />
               </small>
             </div>
           ) : (
@@ -63,7 +64,7 @@ const Best = () => {
                 className="best-viewMore"
                 onClick={() => setViewMore(undefined)}
               >
-                View more <FaArrowDown />
+                {locale.best.viewMore} <FaArrowDown />
               </small>
             </div>
           )}

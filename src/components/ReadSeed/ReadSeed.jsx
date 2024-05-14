@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { items, itemsImg } from "../../utils/items";
-import { RunContext } from "../../utils/RunContext";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const {
@@ -13,7 +13,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
     portal_map = undefined,
     weather_vane_map = undefined,
   } = data;
-  const { setIsClicked } = useContext(RunContext);
+  const { setIsClicked, locale } = useContext(PageContext);
   const [itemIndex, setItemIndex] = useState({ type: 0, index: 0 });
 
   const navigate = useNavigate();
@@ -38,9 +38,9 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                   locations[typeIndex][itemIndex].push(
                     <>
                       <span className="location-item">{item}</span>
-                      {" in "}
+                      {` ${locale.readSeed.in} `}
                       <span className="location-world">{world}</span>
-                      {" at "}
+                      {` ${locale.readSeed.at} `}
                       <span className="location-info">{`${zone} - ${location}`}</span>
                     </>
                   );
@@ -52,7 +52,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
               locations[typeIndex][itemIndex].push(
                 <>
                   <span className="location-item">{portal_map[portal]}</span>
-                  {" at "}
+                  {` ${locale.readSeed.at} `}
                   <span className="location-info">{portal}</span>
                 </>
               );
@@ -65,7 +65,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                   <span className="location-item">
                     {weather_vane_map[weather_vane]}
                   </span>
-                  {" at "}
+                  {` ${locale.readSeed.at} `}
                   <span className="location-info">{weather_vane}</span>
                 </>
               );
@@ -93,7 +93,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
           {allLocationsOfItems().map((types, typesIndex) =>
             types[typesIndex].length > 0 ? (
               <div className="read-imgs-sub" key={typesIndex}>
-                <h6>{["ITEMS", "OTHERS", "KEYS"][typesIndex]} :</h6>
+                <h6>{locale.readSeed.types[typesIndex]} :</h6>
                 <div className="read-imgs">
                   {types.map((items, itemsIndex) =>
                     items.length > 0 ? (
@@ -130,7 +130,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
         </div>
       </div>
       <small className="read-goback" onClick={handleNavigate}>
-        {"<"}- RETURN
+        {"<"}- {locale.readSeed.return}
       </small>
     </div>
   );
