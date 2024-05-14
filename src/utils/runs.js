@@ -79,4 +79,9 @@ export const fast = [
     name: "1h53m28.99s_2824068161",
     date: convertDate(2024, 5, 13, 23, 8),
   },
+  {
+    data: require("./logs/fast/2h34m58.20s_2617355543_spoiler.json"),
+    name: "2h34m58.20s_2617355543",
+    date: convertDate(2024, 5, 14, 21, 13),
+  },
 ];
