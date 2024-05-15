@@ -1,5 +1,5 @@
 import "./Reader.css";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 import { BsFiletypeJson } from "react-icons/bs";
 import { IoCloudUploadOutline } from "react-icons/io5";
@@ -8,8 +8,7 @@ import { PageContext } from "../../utils/contexts/PageContext";
 import ReadSeed from "../../components/ReadSeed/ReadSeed";
 
 const Reader = () => {
-  const [file, setFile] = useState(undefined);
-  const { locale } = useContext(PageContext);
+  const { locale, file, setFile } = useContext(PageContext);
 
   const handleFile = (f, e) => {
     // Just some file infos

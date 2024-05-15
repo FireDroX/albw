@@ -1,5 +1,5 @@
 import "./Preset.css";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 import Example from "../../utils/presets/Example.json";
@@ -8,11 +8,15 @@ import Fast from "../../utils/presets/Fast.json";
 const presets = [Example, Fast, Example];
 
 const Preset = () => {
-  const [choosedPreset, setChoosedPreset] = useState(2);
-  const [preset, setPreset] = useState(presets[choosedPreset]);
-  const [infosIndex, setInfosIndex] = useState({ category: 0, setting: 0 });
-  const { locale } = useContext(PageContext);
-
+  const {
+    locale,
+    preset,
+    setPreset,
+    infosIndex,
+    setInfosIndex,
+    choosedPreset,
+    setChoosedPreset,
+  } = useContext(PageContext);
   const getPresetInfos = () => {
     const presetArray = [];
     let index = 0;
