@@ -8,3 +8,4 @@
 - Mass Update 🎳 : `description`
 - Cleaned the code 🚿
 - Run `time` 🎥 : `seed`
+- Improved `this` 💡
