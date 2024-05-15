@@ -1,13 +1,14 @@
 import "./Reader.css";
-import { useState } from "react";
+import { useContext } from "react";
 
 import { BsFiletypeJson } from "react-icons/bs";
 import { IoCloudUploadOutline } from "react-icons/io5";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 import ReadSeed from "../../components/ReadSeed/ReadSeed";
 
 const Reader = () => {
-  const [file, setFile] = useState(undefined);
+  const { locale, file, setFile } = useContext(PageContext);
 
   const handleFile = (f, e) => {
     // Just some file infos
@@ -50,7 +51,7 @@ const Reader = () => {
                   <BsFiletypeJson />
                 </div>
                 <div className="reader-txt">
-                  <span>Click to upload a JSON file.</span>
+                  <span>{locale.reader.importText}</span>
                 </div>
                 <input
                   id="file-upload"
@@ -70,22 +71,20 @@ const Reader = () => {
                             }
                           });
                           if (!dontPass) handleFile(newData, file);
-                          else alert("Required properties are missing.");
+                          else alert(locale.reader.alerts.missingRequirements);
                         } catch (error) {
-                          alert("Error parsing JSON: " + error);
+                          alert(locale.reader.alerts.errorParsing + error);
                         }
                       };
                       reader.readAsText(file);
                     } else {
-                      alert(
-                        "This type of file is not compatible. Please use only .json files !"
-                      );
+                      alert(locale.reader.alerts.notCompatible);
                     }
                   }}
                 />
               </label>
             </div>
-            <h4>OR</h4>
+            <h4>{locale.reader.or}</h4>
             <div
               className="reader-dnd"
               onDrop={(e) => {
@@ -103,16 +102,14 @@ const Reader = () => {
                         }
                       });
                       if (!dontPass) handleFile(newData, droppedFile);
-                      else alert("Required properties are missing.");
+                      else alert(locale.reader.alerts.missingRequirements);
                     } catch (error) {
-                      alert("Error parsing JSON: " + error);
+                      alert(locale.reader.alerts.errorParsing + error);
                     }
                   };
                   reader.readAsText(droppedFile);
                 } else {
-                  alert(
-                    "This type of file is not compatible. Please use only .json files !"
-                  );
+                  alert(locale.reader.alerts.notCompatible);
                 }
               }}
               onDragOver={(e) => e.preventDefault()}
@@ -121,7 +118,7 @@ const Reader = () => {
                 <IoCloudUploadOutline />
               </div>
               <div className="reader-txt">
-                <span>Drag and Drop it !</span>
+                <span>{locale.reader.dropText}</span>
               </div>
             </div>
           </div>

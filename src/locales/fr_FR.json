@@ -1,0 +1,273 @@
+{
+  "home": {
+    "title": ["A Link Between Worlds", "Visualiseur de Spoilers 📄"]
+  },
+  "nav": {
+    "reader": "Visualiseur",
+    "preset": "Config",
+    "best": "Records"
+  },
+  "best": {
+    "info1": "Réalisé avec une configuration ",
+    "link": "Fast",
+    "info2": " (cliquer sur \"Fast\" pour la télécharger)",
+    "viewMore": "Voir plus",
+    "viewLess": "Voir moins"
+  },
+  "readSeed": {
+    "in": "dans",
+    "at": "à",
+    "types": ["OBJETS", "AUTRES", "CLES"],
+    "return": "RETOUR"
+  },
+  "reader": {
+    "importText": "Ajoute ton fichier JSON.",
+    "or": "OU",
+    "dropText": "Dépose le directement !",
+    "alerts": {
+      "missingRequirements": "Des propriétés requises sont manquantes.",
+      "errorParsing": "Erreur lors de l'analyse: ",
+      "notCompatible": "Ce type de fichier n'est pas compatible. Veuillez utiliser uniquement des fichiers .json !"
+    }
+  },
+  "preset": {
+    "texts": {
+      "info1": "Télécharge la  ",
+      "link": "configuration",
+      "info2": " !",
+      "list": ["Défaut", "Rapide", "Perso..."]
+    },
+    "configurations": {
+      "logic": {
+        "logic_mode": {
+          "name": "Mode Logique",
+          "description": [
+            "Normal        - Jeu standard, pas d'utilisation astucieuse d'objets ou de bugs.",
+            "Hard          - Ajoute des astuces qui ne sont pas techniquement des bugs. La lampe + le filet sont considérés comme des armes.",
+            "Glitched      - Comprend ce qui précède ainsi qu'une sélection de bugs faciles à apprendre.",
+            "Adv. Glitched - Comprend ce qui précède ainsi que des bugs \"avancés\" qui peuvent être difficiles à maîtriser.",
+            "Hell          - Comprend tous les bugs RTA viables connus, y compris les plus fous. Ne choisissez pas cela.",
+            "NoLogic       - Les objets sont placés sans aucune logique. Il est probable que les seed ne soient pas réalisables."
+          ],
+          "choises": [
+            "Normal",
+            "Hard",
+            "Glitched",
+            "AdvGlitched",
+            "Hell",
+            "NoLogic"
+          ],
+          "adder": 1
+        },
+        "randomize_dungeon_prizes": {
+          "name": "Randomiser les Prix des Donjons",
+          "description": [
+            "Cela mélange tous les Portraits des Sages, Pendentifs et le Charme entre eux."
+          ],
+          "type": false
+        },
+        "vanilla_charm": {
+          "name": "Charme 'Vanilla'",
+          "description": [
+            "Activer ceci force l'une des deux améliorations du Pendentif du Courage à être dans la Salle du Trône de Zelda.",
+            "Sinon, un Portrait de Sage ou un Pendentif aléatoire sera placé dans la Salle du Trône de Zelda."
+          ],
+          "type": false
+        },
+        "lc_requirement": {
+          "name": "Exigence du Château de Lorule",
+          "description": [
+            "Choisissez combien de Portraits sont nécessaires pour entrer dans le Château de Lorule et affronter Yuganon :"
+          ],
+          "min": 0,
+          "max": 7
+        },
+        "ped_requirement": {
+          "name": "Exigence du Piédestal",
+          "description": [
+            "Choisissez quels Pendentifs sont nécessaires pour atteindre le Piédestal de l'Épée de Légende :",
+            "Vanilla - Seuls les Pendentifs de Puissance et de Sagesse sont nécessaires",
+            "Charmed - Les trois Pendentifs sont nécessaires, mais le Charme peut remplacer le Pendentif du Courage",
+            "Standard - Tous les Pendentifs sont nécessaires"
+          ],
+          "choises": ["Vanilla", "Charmed", "Standard"],
+          "adder": 2
+        },
+        "hyrule_castle_setting": {
+          "name": "Paramètre du Château d'Hyrule",
+          "description": [
+            "Choisissez comment la partie Donjon du Château d'Hyrule doit être gérée :",
+            "EarlyLoruleCastle - Terminer le Château d'Hyrule permet un accès anticipé au Château de Lorule via la Porte du Boss",
+            "Closed - Le Donjon est complètement fermé et retiré de toute logique."
+          ],
+          "choises": ["EarlyLoruleCastle", "Closed"],
+          "adder": 1
+        },
+        "nice_mode": {
+          "name": "Mélanger les Objets Utiles",
+          "description": [
+            "Cela mélange une deuxième copie progressive de chaque objet de Ravio dans la liste d'objets général."
+          ],
+          "type": false
+        },
+        "super_items": {
+          "name": "Mélanger les Super Objets",
+          "description": [
+            "Cela mélange une deuxième copie progressive de la Lampe et du Filet dans la liste d'objets général."
+          ],
+          "type": false
+        },
+        "reverse_sage_events": {
+          "name": "Événements des Sages Inversés",
+          "description": [
+            "Relie les vérifications et événements liés aux Sages à leur sauvetage réel.",
+            "Effectue les changements suivants :",
+            "- Irène => Débloque le 'check' d'Irène (au lieu du Pendentif du Courage)",
+            "- Rosso => Débloque la Maison de Rosso et ses deux 'checks' (au lieu du Pendentif du Courage)",
+            "- Oren => Débloque le 'check' de la Pierre toute douce et l'événement de l'Homme Louche",
+            "- Impa => Débloque la porte d'entrée du Château d'Hyrule"
+          ],
+          "type": false
+        },
+        "no_progression_enemies": {
+          "name": "Ennemis sans Progression",
+          "description": [
+            "Supprime les Ennemis des donjons qui sont eux-mêmes Progression (par exemple : Bawbs, l'ennemi à bombe).",
+            "La logique sera ajustée pour nécessiter les objets du joueur à la place."
+          ],
+          "type": false
+        },
+        "start_with_merge": {
+          "name": "Commencer avec la Fusion",
+          "description": [
+            "Commencez avec la capacité de fusionner dans les murs, sans le Bracelet de Ravio."
+          ],
+          "type": false
+        },
+        "bell_in_shop": {
+          "name": "Cloche dans la Boutique",
+          "description": [
+            "Si activé, la Cloche sera placée dans la Boutique de Ravio."
+          ],
+          "type": false
+        },
+        "pouch_in_shop": {
+          "name": "Sacoche dans la Boutique",
+          "description": [
+            "Si activé, la Sacoche sera placée dans la Boutique de Ravio."
+          ],
+          "type": false
+        },
+        "sword_in_shop": {
+          "name": "Épée dans la Boutique",
+          "description": [
+            "Si activé, au moins une Épée sera placée dans la Boutique de Ravio.",
+            "Remarque : Cette option est incompatible avec le Mode Sans Épée, qui supprime toutes les Épées du jeu."
+          ],
+          "type": false
+        },
+        "boots_in_shop": {
+          "name": "Bottes de Pégase dans la Boutique",
+          "description": [
+            "Si activé, les Bottes de Pégase seront placées dans la Boutique de Ravio."
+          ],
+          "type": false
+        },
+        "assured_weapon": {
+          "name": "Arme Assurée dans la Boutique",
+          "description": [
+            "Si activé, au moins une arme est garantie d'être placée dans la Boutique de Ravio."
+          ],
+          "type": false
+        },
+        "maiamai_madness": {
+          "name": "Folie des Maiamai",
+          "description": [
+            "Cela mélange les Maiamai dans la liste, ajoutant 100 emplacements supplémentaires."
+          ],
+          "type": false
+        },
+        "minigames_excluded": {
+          "name": "Exclure les Minijeux",
+          "description": [
+            "Exclut les éléments suivants : Octoball Derby, Éviter les Cuccos, Course Folle d'Hyrule, Tour de l'escarmouche, et les deux Ruée de Rubis"
+          ],
+          "type": false
+        },
+        "skip_big_bomb_flower": {
+          "name": "Retirer les Grosses Pierres des Grande Fleur de Bombe",
+          "description": [
+            "Retirer les 5 Grosses Pierres dans le Champ de Lorule.",
+            "(N'affecte pas l'Épreuve de Bombe du Château de Lorule)"
+          ],
+          "type": false
+        },
+        "skip_trials": {
+          "name": "Sauter les Épreuves",
+          "description": [
+            "Ouvre automatiquement la porte des Épreuves du Château de Lorule."
+          ],
+          "type": false
+        },
+        "bow_of_light_in_castle": {
+          "name": "Arc de Lumière au Château",
+          "description": [
+            "Limite le placement de l'Arc de Lumière à quelque part dans le Château de Lorule (y compris éventuellement Zelda)."
+          ],
+          "type": false
+        },
+        "weather_vanes_activated": {
+          "name": "Pré-Activer les Girouette",
+          "description": [
+            "Commencez le jeu avec toutes les Girouettes d'activés.",
+            "La logique peut s'attendre à ce que les joueurs utilisent la Cloche pour atteindre des emplacements autrement inaccessibles de cette manière.",
+            "Remarque : Les trackers ne prennent actuellement pas en charge cette fonctionnalité."
+          ],
+          "type": false
+        },
+        "dark_rooms_lampless": {
+          "name": "Traversée de Salles Obscures (avancée)",
+          "description": [
+            "Si activée, la logique peut s'attendre à ce que les joueurs traversent des Salles Obscures sans la Lampe.",
+            "Non recommandée pour les débutants et ceux qui aiment pouvoir voir les choses."
+          ],
+          "type": false
+        },
+        "swordless_mode": {
+          "name": "Mode Sans Épée (avancé)",
+          "description": [
+            "Supprime *TOUTES* les Épées du jeu.",
+            "Le Filet devient un objet nécessaire pour battre contre Yuga Ganon."
+          ],
+          "type": false
+        },
+        "hint_ghost_price": {
+          "name": "Prix des Indices Fantômes",
+          "description": [
+            "Définissez le prix des Indices d'un Indice Fantôme :",
+            "Prix recommandé : 30"
+          ],
+          "min": 0,
+          "max": 9999
+        }
+      },
+      "options": {
+        "chest_size_matches_contents": {
+          "name": "Taille des Coffres Correspond aux Contenus",
+          "description": [
+            "Tous les coffres contenant des objets de progression ou uniques deviendront grands, et les autres seront petits.",
+            "Remarque : Certains grands coffres auront une hitbox réduite pour éviter toute interférence négative avec le gameplay."
+          ],
+          "type": false
+        },
+        "night_mode": {
+          "name": "Mode Nuit",
+          "description": [
+            "Active certains shaders sur le monde extérieur qui donnent l'impression que c'est la nuit à Hyrule."
+          ],
+          "type": false
+        }
+      }
+    }
+  }
+}

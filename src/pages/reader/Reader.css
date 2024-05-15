@@ -38,8 +38,8 @@
 }
 
 .reader-icon svg {
-  height: 80px;
-  scale: 5;
+  width: 4rem;
+  height: 4rem;
   fill: var(--text75);
   color: var(--text75);
 }

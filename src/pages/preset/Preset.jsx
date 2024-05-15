@@ -1,7 +1,6 @@
 import "./Preset.css";
-import { useState } from "react";
-
-import { presetInfos } from "../../utils/presetInfos";
+import { useContext } from "react";
+import { PageContext } from "../../utils/contexts/PageContext";
 
 import Example from "../../utils/presets/Example.json";
 import Fast from "../../utils/presets/Fast.json";
@@ -9,17 +8,24 @@ import Fast from "../../utils/presets/Fast.json";
 const presets = [Example, Fast, Example];
 
 const Preset = () => {
-  const [choosedPreset, setChoosedPreset] = useState(2);
-  const [preset, setPreset] = useState(presets[choosedPreset]);
-  const [infosIndex, setInfosIndex] = useState({ category: 0, setting: 0 });
-
+  const {
+    locale,
+    preset,
+    setPreset,
+    infosIndex,
+    setInfosIndex,
+    choosedPreset,
+    setChoosedPreset,
+  } = useContext(PageContext);
   const getPresetInfos = () => {
     const presetArray = [];
     let index = 0;
-    for (const categories in presetInfos) {
+    for (const categories in locale.preset.configurations) {
       presetArray.push([]);
-      for (const settings in presetInfos[categories]) {
-        presetArray[index].push(presetInfos[categories][settings]);
+      for (const settings in locale.preset.configurations[categories]) {
+        presetArray[index].push(
+          locale.preset.configurations[categories][settings]
+        );
       }
       index++;
     }
@@ -116,7 +122,7 @@ const Preset = () => {
         <div className="preset-container">
           <div className="preset-list">
             <ul>
-              {["Default", "Fast", "Custom.."].map((li, index) => (
+              {locale.preset.texts.list.map((li, index) => (
                 <li
                   key={index}
                   style={{
@@ -157,8 +163,9 @@ const Preset = () => {
                 </div>
               </div>
               <div className="preset-inputFooter">
-                {getPresetInfos()[infosIndex.category][infosIndex.setting]
-                  .type === Boolean ? (
+                {[false, true].includes(
+                  getPresetInfos()[infosIndex.category][infosIndex.setting].type
+                ) ? (
                   <input
                     name="Boolean inputs"
                     type="checkbox"
@@ -268,7 +275,7 @@ const Preset = () => {
             </div>
           </div>
           <small>
-            Download the{" "}
+            {locale.preset.texts.info1}
             <a
               href={`data:text/json;charset=uft-8,${encodeURIComponent(
                 JSON.stringify(preset, null, 2)
@@ -283,9 +290,9 @@ const Preset = () => {
                 )
               }
             >
-              preset
-            </a>{" "}
-            !
+              {locale.preset.texts.link}
+            </a>
+            {locale.preset.texts.info2}
           </small>
         </div>
       </div>
