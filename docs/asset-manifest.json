@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/albw/static/css/main.26f5cf9d.css",
-    "main.js": "/albw/static/js/main.2f1fc84f.js",
+    "main.js": "/albw/static/js/main.fc54a8e2.js",
     "static/css/149.f645022e.chunk.css": "/albw/static/css/149.f645022e.chunk.css",
     "static/js/149.546b7f16.chunk.js": "/albw/static/js/149.546b7f16.chunk.js",
     "static/css/512.d9200328.chunk.css": "/albw/static/css/512.d9200328.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/Portal.png": "/albw/static/media/Portal.2f62a8fb8efe94b51438.png",
     "index.html": "/albw/index.html",
     "main.26f5cf9d.css.map": "/albw/static/css/main.26f5cf9d.css.map",
-    "main.2f1fc84f.js.map": "/albw/static/js/main.2f1fc84f.js.map",
+    "main.fc54a8e2.js.map": "/albw/static/js/main.fc54a8e2.js.map",
     "149.f645022e.chunk.css.map": "/albw/static/css/149.f645022e.chunk.css.map",
     "149.546b7f16.chunk.js.map": "/albw/static/js/149.546b7f16.chunk.js.map",
     "512.d9200328.chunk.css.map": "/albw/static/css/512.d9200328.chunk.css.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.26f5cf9d.css",
-    "static/js/main.2f1fc84f.js"
+    "static/js/main.fc54a8e2.js"
   ]
 }
