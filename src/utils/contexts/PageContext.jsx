@@ -7,10 +7,11 @@ export const PageProvider = ({ children }) => {
   const [locale, setLocale] = useState(() => {
     const lang = navigator.language;
     const localeFileName = lang.replace("-", "_");
-    return (
-      require(`../../locales/${localeFileName}.json`) ||
-      require(`../../locales/en_US.json`)
-    );
+    try {
+      return require(`../../locales/${localeFileName}.json`);
+    } catch {
+      return require(`../../locales/en_US.json`);
+    }
   });
 
   // Spoiler logs context (if shown or not)
