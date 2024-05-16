@@ -10,6 +10,11 @@ export const PageProvider = ({ children }) => {
     try {
       return require(`../../locales/${localeFileName}.json`);
     } catch {
+      console.log(
+        "Couldn't load \"" +
+          localeFileName +
+          '" language file. \nLoading the default Language (en_US)...'
+      );
       return require(`../../locales/en_US.json`);
     }
   });
