@@ -127,7 +127,7 @@ export const items = [
       "Pendant of Wisdom",
       "Pendant of Power",
     ],
-    ["Quake", "%portal_map%"],
+    ["Quake", "%portal_map%", "%crack_map%"],
     ["%weather_vane_map%"],
   ],
   [
