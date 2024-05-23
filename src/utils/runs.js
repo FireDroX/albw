@@ -95,3 +95,11 @@ export const fast = [
     date: convertDate(2024, 5, 17, 20, 5),
   },
 ];
+
+export const cracksanity = [
+  {
+    data: require("./logs/cracksanity/3h36m42.94s_3792606750_spoiler.json"),
+    name: "3h36m42.94s_3792606750",
+    date: convertDate(2024, 5, 22, 22, 50),
+  },
+];

@@ -1,3 +1,43 @@
+.best-box {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.best-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+  position: relative;
+  list-style: none;
+  color: var(--text65);
+  margin: 0;
+  padding: 0;
+}
+
+.best-selection::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 5px;
+  height: 200px;
+  background-color: var(--text55);
+  border-radius: 25px;
+}
+
+.best-selection > li {
+  width: max-content;
+  padding: 0.1rem 0.5rem;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+.best-selection > li:hover {
+  cursor: pointer;
+}
+
 .best-page {
   margin-bottom: 5rem;
   display: flex;
@@ -24,4 +64,25 @@
 
 .best-viewMore > small:hover {
   cursor: pointer;
+}
+
+@media (max-width: 830px) {
+  .best-box {
+    flex-direction: column;
+  }
+
+  .best-selection {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .best-selection::after {
+    height: 5px;
+    width: 300px;
+    bottom: -20px;
+    top: auto;
+    right: auto;
+  }
 }

@@ -8,9 +8,14 @@
     "best": "Best"
   },
   "best": {
-    "info1": "All done with a ",
-    "link": "Fast",
-    "info2": "preset (click \"Fast\" to download the preset)",
+    "presets": [
+      {
+        "info": "Fast: 3 paintings + Bow of Light + Start with Merge"
+      },
+      {
+        "info": "Cracksanity: 7 paintings + Bow of Light + Cracks and Weather Vanes random"
+      }
+    ],
     "viewMore": "View more",
     "viewLess": "View less"
   },

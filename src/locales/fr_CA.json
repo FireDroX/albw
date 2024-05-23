@@ -8,9 +8,14 @@
     "best": "Records"
   },
   "best": {
-    "info1": "Réalisé avec une configuration ",
-    "link": "Fast",
-    "info2": " (cliquer sur \"Fast\" pour la télécharger)",
+    "presets": [
+      {
+        "info": "Fast: 3 tableaux + Arc de Lumière + Commence avec la Fusion"
+      },
+      {
+        "info": "Cracksanity: 7 tableaux + Arc de Lumière + Portails et Girouette aléatoires"
+      }
+    ],
     "viewMore": "Voir plus",
     "viewLess": "Voir moins"
   },
