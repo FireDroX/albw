@@ -6,13 +6,7 @@ import { items, itemsImg } from "../../utils/items";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
-  const {
-    layout,
-    seed,
-    version = "????",
-    portal_map = undefined,
-    weather_vane_map = undefined,
-  } = data;
+  const { layout, seed, version = "????" } = data;
   const { setIsClicked, locale } = useContext(PageContext);
   const [itemIndex, setItemIndex] = useState({ type: 0, index: 0 });
 
@@ -47,31 +41,23 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
               }
             }
           }
-          if (item === "%portal_map%") {
-            for (const portal in portal_map) {
-              locations[typeIndex][itemIndex].push(
-                <>
-                  <span className="location-item">{portal_map[portal]}</span>
-                  {` ${locale.readSeed.at} `}
-                  <span className="location-info">{portal}</span>
-                </>
-              );
+          ["%portal_map%", "%crack_map%", "%weather_vane_map%"].forEach(
+            (inclusion) => {
+              if (item === inclusion) {
+                for (const thing in data[inclusion.replaceAll("%", "")]) {
+                  locations[typeIndex][itemIndex].push(
+                    <>
+                      <span className="location-item">
+                        {data[inclusion.replaceAll("%", "")][thing]}
+                      </span>
+                      {` ${locale.readSeed.at} `}
+                      <span className="location-info">{thing}</span>
+                    </>
+                  );
+                }
+              }
             }
-          }
-          if (item === "%weather_vane_map%") {
-            for (const weather_vane in weather_vane_map) {
-              locations[typeIndex][itemIndex].push(
-                <>
-                  <span className="location-item">
-                    {weather_vane_map[weather_vane]}
-                  </span>
-                  {` ${locale.readSeed.at} `}
-                  <span className="location-info">{weather_vane}</span>
-                </>
-              );
-            }
-          }
-          return 0;
+          );
         });
         return 0;
       });
