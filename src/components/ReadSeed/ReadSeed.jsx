@@ -14,7 +14,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
 
   const handleNavigate = () => {
     navigate(`/albw?page=${where}`);
-    reset(undefined);
+    reset({ show: false, index: 0 });
     setIsClicked({ clicked: false, index: 0 });
   };
 
@@ -58,10 +58,11 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
               }
             }
           );
+          return null;
         });
-        return 0;
+        return null;
       });
-      return 0;
+      return null;
     });
     return locations;
   };

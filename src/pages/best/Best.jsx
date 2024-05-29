@@ -7,7 +7,8 @@ import RunInfos from "../../components/RunInfos/RunInfos";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 const Best = () => {
-  const { isClicked, locale } = useContext(PageContext);
+  const { isClicked, locale, setIsClicked, setShowSpoilers } =
+    useContext(PageContext);
   const [viewMore, setViewMore] = useState(5);
   const [listIndex, setListIndex] = useState(0);
   const runs = [fast, cracksanity];
@@ -18,6 +19,13 @@ const Best = () => {
     );
   });
 
+  const handleChangingCategory = (index) => {
+    setIsClicked({ clicked: false, index: 0 });
+    setShowSpoilers({ show: false, index: 0 });
+    setViewMore(5);
+    setListIndex(index);
+  };
+
   return (
     <section className="App">
       <div>
@@ -26,7 +34,7 @@ const Best = () => {
             {["Fast", "Cracksanity"].map((li, index) => (
               <li
                 key={index}
-                onClick={() => setListIndex(index)}
+                onClick={() => handleChangingCategory(index)}
                 style={{
                   backgroundColor:
                     listIndex === index ? "var(--secondary65)" : "transparent",

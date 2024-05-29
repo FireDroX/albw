@@ -1,19 +1,19 @@
 import "./RunInfos.css";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 import { FaTrophy } from "react-icons/fa";
 import { PageContext } from "../../utils/contexts/PageContext";
 import ReadSeed from "../ReadSeed/ReadSeed";
 
 const RunInfos = ({ place, data, name, date, index }) => {
-  const { setIsClicked } = useContext(PageContext);
-  const [spoilers, setSpoilers] = useState(false);
+  const { setIsClicked, showSpoilers, setShowSpoilers } =
+    useContext(PageContext);
 
   const time = name.split("_")[0];
   const seed = name.split("_")[1];
 
   const handleSpoilers = () => {
-    setSpoilers(!spoilers);
+    setShowSpoilers({ show: true, index: index });
     setIsClicked({ clicked: true, index: index });
   };
 
@@ -40,7 +40,9 @@ const RunInfos = ({ place, data, name, date, index }) => {
     }
   };
 
-  return !spoilers ? (
+  return showSpoilers.show && showSpoilers.index === index ? (
+    <ReadSeed data={data} where="best" reset={setShowSpoilers} />
+  ) : (
     <div className="runInfos-container">
       <small className="runInfos-place">
         {place === 1 ? (
@@ -70,8 +72,6 @@ const RunInfos = ({ place, data, name, date, index }) => {
         SPOILERS
       </small>
     </div>
-  ) : (
-    <ReadSeed data={data} where="best" reset={setSpoilers} />
   );
 };
 

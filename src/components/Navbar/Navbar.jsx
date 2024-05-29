@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 import { FaEye, FaTrophy } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa6";
 
 const logo = require("../../assets/logo.png");
 
@@ -33,10 +32,6 @@ const Navbar = () => {
       <div onClick={() => handleNavigate("reader")}>
         <h5>{locale.nav.reader}</h5>
         <FaEye />
-      </div>
-      <div onClick={() => handleNavigate("preset")}>
-        <h5>{locale.nav.preset}</h5>
-        <FaDatabase />
       </div>
       <div onClick={() => handleNavigate("best")}>
         <h5>{locale.nav.best}</h5>
