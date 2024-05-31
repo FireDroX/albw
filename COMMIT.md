@@ -7,5 +7,5 @@
 - New BUILD 💿 : `date`
 - Mass Update 🎳 : `description`
 - Cleaned the code 🚿
-- Run `time` 🎥 : `seed`
+- "`type`" Run `time` 🎥 : `seed`
 - Improved `this` 💡
