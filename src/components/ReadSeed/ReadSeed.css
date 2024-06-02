@@ -88,16 +88,31 @@
   color: var(--text55);
 }
 
-.location-info {
-  color: var(--text65);
-  text-decoration: underline solid;
-}
-
 .read-goback {
   color: var(--secondary95);
   text-decoration: underline solid;
 }
 
 .read-goback:hover {
+  cursor: pointer;
+}
+
+button.location-info {
+  border: none;
+  color: #090909;
+  background-color: #090909;
+  transition: 0.25s ease-in all;
+}
+
+.location-info,
+button.location-info:active,
+button.location-info:focus {
+  color: var(--text65);
+  text-decoration: underline solid;
+  background-color: transparent;
+  padding: 0;
+}
+
+button.location-info:hover {
   cursor: pointer;
 }

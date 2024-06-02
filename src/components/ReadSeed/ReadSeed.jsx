@@ -35,7 +35,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                       {` ${locale.readSeed.in} `}
                       <span className="location-world">{world}</span>
                       {` ${locale.readSeed.at} `}
-                      <span className="location-info">{`${zone} - ${location}`}</span>
+                      <button className="location-info">{`${zone} - ${location}`}</button>
                     </>
                   );
               }
@@ -44,14 +44,14 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
           ["%portal_map%", "%crack_map%", "%weather_vane_map%"].forEach(
             (inclusion) => {
               if (item === inclusion) {
-                for (const thing in data[inclusion.replaceAll("%", "")]) {
+                for (const object in data[inclusion.replaceAll("%", "")]) {
                   locations[typeIndex][itemIndex].push(
                     <>
                       <span className="location-item">
-                        {data[inclusion.replaceAll("%", "")][thing]}
+                        {data[inclusion.replaceAll("%", "")][object]}
                       </span>
                       {` ${locale.readSeed.at} `}
-                      <span className="location-info">{thing}</span>
+                      <span className="location-info">{object}</span>
                     </>
                   );
                 }
@@ -103,9 +103,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                   )}
                 </div>
               </div>
-            ) : (
-              false
-            )
+            ) : undefined
           )}
         </div>
         <div className="read-items">
