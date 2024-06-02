@@ -60,7 +60,7 @@ Check out my top runs, all completed using one of the preset listed at the left.
 </div>
 <br />
 
-<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
+<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
 
 ---
 
