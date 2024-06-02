@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
-  <img src="src/assets/images/bow_light.png" alt="Bow" width=70>
+  <img src="src/assets/images/items/bow_light.png" alt="Bow" width=70>
   <a href="https://firedrox.github.io/albw/">
     <h3 align="center">ALBW Spoilers Logs Reader 📄</h3>
   </a>
