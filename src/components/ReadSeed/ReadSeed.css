@@ -98,10 +98,14 @@
 }
 
 button.location-info {
+  outline: none;
   border: none;
   color: #090909;
   background-color: #090909;
+  text-decoration: none;
+  border-radius: 5px;
   transition: 0.25s ease-in all;
+  padding: 0.05rem;
 }
 
 .location-info,
@@ -110,7 +114,6 @@ button.location-info:focus {
   color: var(--text65);
   text-decoration: underline solid;
   background-color: transparent;
-  padding: 0;
 }
 
 button.location-info:hover {

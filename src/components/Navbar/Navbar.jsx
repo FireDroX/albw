@@ -10,12 +10,15 @@ const logo = require("../../assets/logo.png");
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const { setIsClicked, locale } = useContext(PageContext);
+  const { setIsClicked, setShowSpoilers, locale } = useContext(PageContext);
 
   const handleNavigate = (goTo = String) => {
     navigate(`/albw?page=${goTo}`);
     document.title = "ALBW - " + goTo.toString().toUpperCase();
-    if (goTo !== "best") setIsClicked({ clicked: false, index: 0 });
+    if (goTo !== "best") {
+      setIsClicked({ clicked: false, index: 0 });
+      setShowSpoilers({ show: false, index: 0 });
+    }
   };
 
   return (

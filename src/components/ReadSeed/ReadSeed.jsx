@@ -7,7 +7,7 @@ import { PageContext } from "../../utils/contexts/PageContext";
 
 const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const { layout, seed, version = "????" } = data;
-  const { setIsClicked, locale } = useContext(PageContext);
+  const { setIsClicked, locale, setFile } = useContext(PageContext);
   const [itemIndex, setItemIndex] = useState({ type: 0, index: 0 });
 
   const navigate = useNavigate();
@@ -15,6 +15,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const handleNavigate = () => {
     navigate(`/albw?page=${where}`);
     reset({ show: false, index: 0 });
+    setFile(undefined);
     setIsClicked({ clicked: false, index: 0 });
   };
 
@@ -35,7 +36,9 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                       {` ${locale.readSeed.in} `}
                       <span className="location-world">{world}</span>
                       {` ${locale.readSeed.at} `}
-                      <button className="location-info">{`${zone} - ${location}`}</button>
+                      <button className="location-info">
+                        {`${zone} - ${location}`}
+                      </button>
                     </>
                   );
               }
@@ -51,7 +54,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                         {data[inclusion.replaceAll("%", "")][object]}
                       </span>
                       {` ${locale.readSeed.at} `}
-                      <span className="location-info">{object}</span>
+                      <button className="location-info">{object}</button>
                     </>
                   );
                 }
