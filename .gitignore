@@ -3,4 +3,6 @@
 
 # misc
 readFiles.py
+getCodeContext.py
+code_context.txt
 build.bat

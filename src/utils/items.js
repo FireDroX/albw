@@ -1,46 +1,46 @@
-import bee_badge from "../assets/images/bee_badge.png";
-import bell from "../assets/images/bell.png";
-import bombs from "../assets/images/bombs.png";
-import boomerang from "../assets/images/boomerang.png";
-import bottle_trade from "../assets/images/bottle_trade.png";
-import bottle from "../assets/images/bottle.png";
-import bow from "../assets/images/bow.png";
-import bow_light from "../assets/images/bow_light.png";
-import bracelet from "../assets/images/bracelet.png";
-import flippers from "../assets/images/flippers.png";
-import frod from "../assets/images/frod.png";
-import fsword from "../assets/images/fsword.png";
-import hammer from "../assets/images/hammer.png";
-import hint_glasses from "../assets/images/hint_glasses.png";
-import hookshot from "../assets/images/hookshot.png";
-import irod from "../assets/images/irod.png";
-import lamp from "../assets/images/lamp.png";
-import mail_green from "../assets/images/mail_green.png";
-import master_ore from "../assets/images/master_ore.png";
-import net from "../assets/images/net.png";
-import pegasus_boots from "../assets/images/pegasus_boots.png";
-import pouch from "../assets/images/pouch.png";
-import power_glove from "../assets/images/power_glove.png";
-import unknown_pendant from "../assets/images/unknown_pendant.png";
-import shield_hylian from "../assets/images/shield_hylian.png";
-import smooth_gem from "../assets/images/smooth_gem.png";
-import srod from "../assets/images/srod.png";
-import stamina_scroll from "../assets/images/stamina_scroll.png";
-import trod from "../assets/images/trod.png";
-import Portal from "../assets/images/Portal.png";
-import weather_vanes from "../assets/images/weather_vanes.png";
+import bee_badge from "../assets/images/others/bee_badge.png";
+import bell from "../assets/images/items/bell.png";
+import bombs from "../assets/images/items/bombs.png";
+import boomerang from "../assets/images/items/boomerang.png";
+import bottle_trade from "../assets/images/others/bottle_trade.png";
+import bottle from "../assets/images/items/bottle.png";
+import bow from "../assets/images/items/bow.png";
+import bow_light from "../assets/images/items/bow_light.png";
+import bracelet from "../assets/images/others/bracelet.png";
+import flippers from "../assets/images/items/flippers.png";
+import frod from "../assets/images/items/frod.png";
+import fsword from "../assets/images/items/fsword.png";
+import hammer from "../assets/images/items/hammer.png";
+import hint_glasses from "../assets/images/others/hint_glasses.png";
+import hookshot from "../assets/images/items/hookshot.png";
+import irod from "../assets/images/items/irod.png";
+import lamp from "../assets/images/items/lamp.png";
+import mail_green from "../assets/images/items/mail_green.png";
+import master_ore from "../assets/images/others/master_ore.png";
+import net from "../assets/images/items/net.png";
+import pegasus_boots from "../assets/images/items/pegasus_boots.png";
+import pouch from "../assets/images/others/pouch.png";
+import power_glove from "../assets/images/items/power_glove.png";
+import dungeons_rewards from "../assets/images/others/dungeons_rewards.png";
+import shield_hylian from "../assets/images/items/shield_hylian.png";
+import smooth_gem from "../assets/images/others/smooth_gem.png";
+import srod from "../assets/images/items/srod.png";
+import stamina_scroll from "../assets/images/others/stamina_scroll.png";
+import trod from "../assets/images/items/trod.png";
+import Portal from "../assets/images/others/Portal.png";
+import weather_vanes from "../assets/images/others/weather_vanes.png";
 
-import EP from "../assets/images/EP.png";
-import HG from "../assets/images/HG.png";
-import TH from "../assets/images/TH.png";
-import PD from "../assets/images/PD.png";
-import SP from "../assets/images/SP.png";
-import SW from "../assets/images/SW.png";
-import T_H from "../assets/images/T'H.png";
-import TR from "../assets/images/TR.png";
-import DP from "../assets/images/DP.png";
-import IR from "../assets/images/IR.png";
-import LC from "../assets/images/LC.png";
+import EP from "../assets/images/keys/EP.png";
+import HG from "../assets/images/keys/HG.png";
+import TH from "../assets/images/keys/TH.png";
+import PD from "../assets/images/keys/PD.png";
+import SP from "../assets/images/keys/SP.png";
+import SW from "../assets/images/keys/SW.png";
+import T_H from "../assets/images/keys/T'H.png";
+import TR from "../assets/images/keys/TR.png";
+import DP from "../assets/images/keys/DP.png";
+import IR from "../assets/images/keys/IR.png";
+import LC from "../assets/images/keys/LC.png";
 
 export const itemsImg = [
   [
@@ -74,7 +74,7 @@ export const itemsImg = [
     smooth_gem,
     stamina_scroll,
     pouch,
-    unknown_pendant,
+    dungeons_rewards,
     Portal,
     weather_vanes,
   ],
@@ -121,11 +121,11 @@ export const items = [
       "Sage Seres",
       "Sage Rosso",
       "Sage Gulley",
-      "Charm",
       "Pendant of Courage Upgrade",
       "Pendant of Courage",
       "Pendant of Wisdom",
       "Pendant of Power",
+      "Charm",
     ],
     ["Quake", "%portal_map%", "%crack_map%"],
     ["%weather_vane_map%"],

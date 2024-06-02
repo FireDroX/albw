@@ -7,14 +7,15 @@ import { PageContext } from "../../utils/contexts/PageContext";
 
 const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   const { layout, seed, version = "????" } = data;
-  const { setIsClicked, locale } = useContext(PageContext);
+  const { setIsClicked, locale, setFile } = useContext(PageContext);
   const [itemIndex, setItemIndex] = useState({ type: 0, index: 0 });
 
   const navigate = useNavigate();
 
   const handleNavigate = () => {
     navigate(`/albw?page=${where}`);
-    reset(undefined);
+    reset({ show: false, index: 0 });
+    setFile(undefined);
     setIsClicked({ clicked: false, index: 0 });
   };
 
@@ -35,7 +36,9 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                       {` ${locale.readSeed.in} `}
                       <span className="location-world">{world}</span>
                       {` ${locale.readSeed.at} `}
-                      <span className="location-info">{`${zone} - ${location}`}</span>
+                      <button className="location-info">
+                        {`${zone} - ${location}`}
+                      </button>
                     </>
                   );
               }
@@ -44,24 +47,25 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
           ["%portal_map%", "%crack_map%", "%weather_vane_map%"].forEach(
             (inclusion) => {
               if (item === inclusion) {
-                for (const thing in data[inclusion.replaceAll("%", "")]) {
+                for (const object in data[inclusion.replaceAll("%", "")]) {
                   locations[typeIndex][itemIndex].push(
                     <>
                       <span className="location-item">
-                        {data[inclusion.replaceAll("%", "")][thing]}
+                        {data[inclusion.replaceAll("%", "")][object]}
                       </span>
                       {` ${locale.readSeed.at} `}
-                      <span className="location-info">{thing}</span>
+                      <button className="location-info">{object}</button>
                     </>
                   );
                 }
               }
             }
           );
+          return null;
         });
-        return 0;
+        return null;
       });
-      return 0;
+      return null;
     });
     return locations;
   };
@@ -102,9 +106,7 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
                   )}
                 </div>
               </div>
-            ) : (
-              false
-            )
+            ) : undefined
           )}
         </div>
         <div className="read-items">

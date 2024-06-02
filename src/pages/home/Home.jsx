@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 import logo from "../../assets/logo.png";
-import bow_light from "../../assets/images/bow_light.png";
+import bow_light from "../../assets/images/items/bow_light.png";
 
 const Home = () => {
   const { locale } = useContext(PageContext);

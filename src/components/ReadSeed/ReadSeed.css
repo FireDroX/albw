@@ -88,16 +88,34 @@
   color: var(--text55);
 }
 
-.location-info {
-  color: var(--text65);
-  text-decoration: underline solid;
-}
-
 .read-goback {
   color: var(--secondary95);
   text-decoration: underline solid;
 }
 
 .read-goback:hover {
+  cursor: pointer;
+}
+
+button.location-info {
+  outline: none;
+  border: none;
+  color: #090909;
+  background-color: #090909;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.25s ease-in all;
+  padding: 0.05rem;
+}
+
+.location-info,
+button.location-info:active,
+button.location-info:focus {
+  color: var(--text65);
+  text-decoration: underline solid;
+  background-color: transparent;
+}
+
+button.location-info:hover {
   cursor: pointer;
 }

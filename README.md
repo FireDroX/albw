@@ -15,7 +15,6 @@
     <a href="#features">Features</a>
     <ul>
       <li><a href="#reader">Reader</a></li>
-      <li><a href="#preset">Preset</a></li>
       <li><a href="#best">Best runs</a></li>
     </ul>
   </li>
@@ -42,21 +41,7 @@ Upload your own spoiler log file locally to the webpage to read it.
 <div align="center">
   <a href="https://firedrox.github.io/albw?page=reader">
     <img src="src/assets/example/example_reader.png" alt="Reader" width=350/>
-    <img src="src/assets//example//example_logs.png" width=350/>
-  </a>
-</div>
-
-<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
-
----
-
-### Preset
-
-Create custom presets in just a few clicks and modify them at any time.
-
-<div align="center">
-  <a href="https://firedrox.github.io/albw?page=preset">
-    <img src="src/assets/example/example_preset.png" alt="Preset"/>
+    <img src="src/assets/example/example_reading.png" alt="Reading" width=350/>
   </a>
 </div>
 
@@ -66,11 +51,11 @@ Create custom presets in just a few clicks and modify them at any time.
 
 ### Best
 
-Check out my top runs, all completed using the [Fast](src/utils/presets/Fast.json) preset. You can also view the spoiler logs!
+Check out my top runs, all completed using one of the preset listed at the left. You can also view the spoiler logs!
 
 <div align="center">
   <a href="https://firedrox.github.io/albw?page=best">
-    <img src="src/assets/example/example_best.png" alt="Example" />
+    <img src="src/assets/example/example_logs.png" alt="Example" />
   </a>
 </div>
 <br />
