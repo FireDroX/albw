@@ -99,6 +99,11 @@ export const fast = [
     name: "2h03m06.46s_0213171938",
     date: convertDate(2024, 5, 31, 16, 53),
   },
+  {
+    data: require("./logs/fast/2h21m52.81s_1880739282_spoiler.json"),
+    name: "2h21m52.81s_1880739282",
+    date: convertDate(2024, 6, 8, 20, 49),
+  },
 ];
 
 export const cracksanity = [
