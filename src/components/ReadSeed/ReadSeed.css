@@ -5,7 +5,6 @@
   align-items: end;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 3rem;
 }
 
 .read-values {
@@ -60,23 +59,22 @@
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .read-values {
-    width: 20rem;
-  }
-}
-
 .read-items {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: start;
+  width: 90%;
   color: var(--text25);
-  max-height: 6rem;
-  overflow-y: scroll;
+  max-height: 11vh;
+  overflow-y: auto;
   scrollbar-color: var(--text25) var(--primary10);
   scrollbar-width: thin;
+}
+
+.read-items::-webkit-scrollbar {
+  display: initial;
 }
 
 .location-item {
@@ -118,4 +116,14 @@ button.location-info:focus {
 
 button.location-info:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .read-values {
+    width: 20rem;
+  }
+
+  .read-items {
+    max-height: 31vh;
+  }
 }
