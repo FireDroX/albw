@@ -1,48 +1,85 @@
 .runInfos-container {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
+  height: 1.5rem;
   color: var(--text25);
-  flex-wrap: wrap;
 }
 
-.runInfos-place {
-  width: 2rem;
+.runInfos-container > * > p {
+  margin: 0;
+  padding-inline: 0.5rem;
+}
+
+.runInfos-place > p {
+  height: 1rem;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--text45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.runInfos-time {
+.runInfos-time > p {
   width: 7.5rem;
   font-size: 16px;
   text-align: start;
   color: var(--text85);
 }
 
-.runInfos-seed {
-  width: 6rem;
+.runInfos-date > p {
+  width: 5.5rem;
+  font-size: 0.75rem;
+}
+
+.runInfos-version > p {
+  width: 4rem;
+  font-size: 0.75rem;
+}
+
+.runInfos-seed > p {
+  width: 5.5rem;
   font-size: 14px;
   color: var(--text35);
   text-decoration: underline solid;
 }
 
-.runInfos-spoilers {
+.runInfos-spoilers > p {
   font-style: italic;
+  font-size: 0.75rem;
 }
 
 .runInfos-spoilers:hover {
   cursor: pointer;
 }
 
-.runInfos-date {
-  width: 6rem;
+.runInfos-time > p,
+.runInfos-date > p,
+.runInfos-version > p,
+.runInfos-seed > p,
+.runInfos-spoilers > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 600px) {
   .runInfos-container {
     justify-content: center;
-    scale: 0.8;
+  }
+
+  .runInfos-container > * > p {
+    padding-inline: 0.25rem;
+  }
+
+  .runInfos-time > p {
+    width: 4.5rem;
+  }
+
+  .runInfos-date > p {
+    width: 2.75rem;
+  }
+
+  .runInfos-version > p,
+  .runInfos-seed > p {
+    width: 3rem;
   }
 }

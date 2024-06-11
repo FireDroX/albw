@@ -65,7 +65,7 @@
   flex-direction: column;
   text-align: left;
   align-items: start;
-  width: 90%;
+  width: 95%;
   color: var(--text25);
   max-height: 11vh;
   overflow-y: auto;
@@ -125,5 +125,20 @@ button.location-info:hover {
 
   .read-items {
     max-height: 31vh;
+    width: 100%;
+  }
+
+  .read-imgs > img {
+    width: 22px;
+  }
+
+  .location-item,
+  .location-world,
+  .location-info {
+    font-size: 10px;
+  }
+
+  .read-imgs-sub > h6 {
+    font-size: 0.8rem;
   }
 }

@@ -46,22 +46,24 @@ const Best = () => {
           </ul>
           <div className="best-page">
             <small>{locale.best.presets[listIndex].info}</small>
-            <div className="best-container">
-              {filteredRuns
-                .slice(0, viewMore)
-                .map((run, i) =>
-                  isClicked.clicked && isClicked.index !== i ? undefined : (
-                    <RunInfos
-                      data={run.data}
-                      name={run.name}
-                      date={run.date}
-                      place={i + 1}
-                      index={i}
-                      key={i}
-                    />
-                  )
-                )}
-            </div>
+            <table className="best-container">
+              <tbody>
+                {filteredRuns
+                  .slice(0, viewMore)
+                  .map((run, i) =>
+                    isClicked.clicked && isClicked.index !== i ? undefined : (
+                      <RunInfos
+                        data={run.data}
+                        name={run.name}
+                        date={run.date}
+                        place={i + 1}
+                        index={i}
+                        key={i}
+                      />
+                    )
+                  )}
+              </tbody>
+            </table>
             {isClicked.clicked ? undefined : viewMore === undefined ? (
               <div className="best-viewMore">
                 <small className="best-viewMore" onClick={() => setViewMore(5)}>
