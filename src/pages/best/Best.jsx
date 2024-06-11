@@ -64,19 +64,18 @@ const Best = () => {
                   )}
               </tbody>
             </table>
-            {isClicked.clicked ? undefined : viewMore === undefined ? (
-              <div className="best-viewMore">
-                <small className="best-viewMore" onClick={() => setViewMore(5)}>
-                  {locale.best.viewLess} <FaArrowUp />
-                </small>
-              </div>
-            ) : (
+            {!isClicked.clicked && (
               <div className="best-viewMore">
                 <small
                   className="best-viewMore"
-                  onClick={() => setViewMore(undefined)}
+                  onClick={() =>
+                    setViewMore(viewMore === undefined ? 5 : undefined)
+                  }
                 >
-                  {locale.best.viewMore} <FaArrowDown />
+                  {viewMore === undefined
+                    ? `${locale.best.viewLess} `
+                    : `${locale.best.viewMore} `}
+                  {viewMore === undefined ? <FaArrowUp /> : <FaArrowDown />}
                 </small>
               </div>
             )}
