@@ -1,0 +1,26 @@
+.portals-container {
+  position: relative;
+}
+
+.portal-box {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px 0px black;
+}
+
+.portal-box:hover::after {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: attr(name);
+  position: absolute;
+  font-size: 10px;
+  width: max-content;
+  padding: 1px 6px;
+  border-radius: 25px;
+  background-color: white;
+  z-index: 10;
+}
