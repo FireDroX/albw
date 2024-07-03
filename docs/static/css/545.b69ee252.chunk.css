@@ -1,0 +1,2 @@
+.keys-container{flex-wrap:wrap;width:25rem}.dungeon-container,.keys-container{align-items:center;display:flex;flex-direction:row;justify-content:center}.dungeon-container{height:65px;padding:10px;position:relative;width:65px}.dungeon-keys{z-index:10}.dungeon-keys>small{bottom:15px;color:var(--text85);font-weight:600;left:50%;margin:0;position:absolute;transform:translateX(-50%)}.dungeon-keys>img:hover{cursor:pointer}.dungeon-container>img{left:10px;position:absolute;top:10px;width:40px}
+/*# sourceMappingURL=545.b69ee252.chunk.css.map*/
