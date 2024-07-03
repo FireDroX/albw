@@ -14,6 +14,7 @@
   <li>
     <a href="#features">Features</a>
     <ul>
+      <li><a href="#keysanity">Keysanity</a></li>
       <li><a href="#reader">Reader</a></li>
       <li><a href="#best">Best runs</a></li>
     </ul>
@@ -31,6 +32,21 @@
 > This is a personal project! It is designed to work with version 0.3.1 and 0.4.0 of the [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but may not be compatible with older versions.
 
 ## Features
+
+---
+
+### Keysanity
+
+Log dungeon small keys and big keys
+
+<div align="center">
+  <a href="https://firedrox.github.io/albw?page=best">
+    <img src="src/assets/example/example_keysanity.png" alt="Keysanity" />
+  </a>
+</div>
+<br />
+
+<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
 
 ---
 

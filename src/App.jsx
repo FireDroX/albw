@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 const Home = lazy(() => import("./pages/home/Home"));
 const Reader = lazy(() => import("./pages/reader/Reader"));
 const Best = lazy(() => import("./pages/best/Best"));
+const Keysanity = lazy(() => import("./pages/keysanity/Keysanity"));
 
 function App() {
   function DynamicPage() {
@@ -24,6 +25,8 @@ function App() {
         return <Reader />;
       case "best":
         return <Best />;
+      case "keysanity":
+        return <Keysanity />;
       default:
         return <Home />;
     }

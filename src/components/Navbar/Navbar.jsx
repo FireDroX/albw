@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { PageContext } from "../../utils/contexts/PageContext";
 
 import { FaEye, FaTrophy } from "react-icons/fa";
+import { IoKeySharp } from "react-icons/io5";
 
 const logo = require("../../assets/logo.png");
 
@@ -32,6 +33,10 @@ const Navbar = () => {
         />
       </div>
 
+      <div onClick={() => handleNavigate("keysanity")}>
+        <h5>KEYSANITY</h5>
+        <IoKeySharp />
+      </div>
       <div onClick={() => handleNavigate("reader")}>
         <h5>{locale.nav.reader}</h5>
         <FaEye />
