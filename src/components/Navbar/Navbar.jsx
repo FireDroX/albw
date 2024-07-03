@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { PageContext } from "../../utils/contexts/PageContext";
 
-import { FaEye, FaTrophy } from "react-icons/fa";
+import { FaEye, FaTrophy, FaRandom } from "react-icons/fa";
 
 const logo = require("../../assets/logo.png");
 
@@ -32,6 +32,10 @@ const Navbar = () => {
         />
       </div>
 
+      <div onClick={() => handleNavigate("portals")}>
+        <h5>{locale.nav.cracks}</h5>
+        <FaRandom />
+      </div>
       <div onClick={() => handleNavigate("reader")}>
         <h5>{locale.nav.reader}</h5>
         <FaEye />

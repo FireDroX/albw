@@ -46,35 +46,36 @@ const Best = () => {
           </ul>
           <div className="best-page">
             <small>{locale.best.presets[listIndex].info}</small>
-            <div className="best-container">
-              {filteredRuns
-                .slice(0, viewMore)
-                .map((run, i) =>
-                  isClicked.clicked && isClicked.index !== i ? undefined : (
-                    <RunInfos
-                      data={run.data}
-                      name={run.name}
-                      date={run.date}
-                      place={i + 1}
-                      index={i}
-                      key={i}
-                    />
-                  )
-                )}
-            </div>
-            {isClicked.clicked ? undefined : viewMore === undefined ? (
-              <div className="best-viewMore">
-                <small className="best-viewMore" onClick={() => setViewMore(5)}>
-                  {locale.best.viewLess} <FaArrowUp />
-                </small>
-              </div>
-            ) : (
+            <table className="best-container">
+              <tbody>
+                {filteredRuns
+                  .slice(0, viewMore)
+                  .map((run, i) =>
+                    isClicked.clicked && isClicked.index !== i ? undefined : (
+                      <RunInfos
+                        data={run.data}
+                        name={run.name}
+                        date={run.date}
+                        place={i + 1}
+                        index={i}
+                        key={i}
+                      />
+                    )
+                  )}
+              </tbody>
+            </table>
+            {!isClicked.clicked && (
               <div className="best-viewMore">
                 <small
                   className="best-viewMore"
-                  onClick={() => setViewMore(undefined)}
+                  onClick={() =>
+                    setViewMore(viewMore === undefined ? 5 : undefined)
+                  }
                 >
-                  {locale.best.viewMore} <FaArrowDown />
+                  {viewMore === undefined
+                    ? `${locale.best.viewLess} `
+                    : `${locale.best.viewMore} `}
+                  {viewMore === undefined ? <FaArrowUp /> : <FaArrowDown />}
                 </small>
               </div>
             )}

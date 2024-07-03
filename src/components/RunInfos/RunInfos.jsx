@@ -43,35 +43,40 @@ const RunInfos = ({ place, data, name, date, index }) => {
   return showSpoilers.show && showSpoilers.index === index ? (
     <ReadSeed data={data} where="best" reset={setShowSpoilers} />
   ) : (
-    <div className="runInfos-container">
-      <small className="runInfos-place">
-        {place === 1 ? (
-          <FaTrophy color="#FFD700" />
-        ) : place === 2 ? (
-          <FaTrophy color="#C0C0C0" />
-        ) : place === 3 ? (
-          <FaTrophy color="#CD7F32" />
-        ) : (
-          place
-        )}
-      </small>
-      {" - "}
-      <small className="runInfos-time">
-        {time.replace(/[hm]/g, function (match) {
-          return match + " ";
-        })}
-      </small>
-      {" - "}
-      <small className="runInfos-date">{compareDate(date.getTime())}</small>
-      {" - "}
-      <small className="runInfos-date">{data.version || "Unknown"}</small>
-      {" - "}
-      <small className="runInfos-seed">{seed}</small>
-      {" - "}
-      <small className="runInfos-spoilers" onClick={handleSpoilers}>
-        SPOILERS
-      </small>
-    </div>
+    <tr className="runInfos-container">
+      <td className="runInfos-place">
+        <p>
+          {place === 1 ? (
+            <FaTrophy color="#FFD700" />
+          ) : place === 2 ? (
+            <FaTrophy color="#C0C0C0" />
+          ) : place === 3 ? (
+            <FaTrophy color="#CD7F32" />
+          ) : (
+            place
+          )}
+        </p>
+      </td>
+      <td className="runInfos-time">
+        <p>
+          {time.replace(/[hm]/g, function (match) {
+            return match + " ";
+          })}
+        </p>
+      </td>
+      <td className="runInfos-date">
+        <p>{compareDate(date.getTime())}</p>
+      </td>
+      <td className="runInfos-version">
+        <p>{data.version || "Unknown"}</p>
+      </td>
+      <td className="runInfos-seed">
+        <p>{seed}</p>
+      </td>
+      <td className="runInfos-spoilers" onClick={handleSpoilers}>
+        <p>SPOILERS</p>
+      </td>
+    </tr>
   );
 };
 

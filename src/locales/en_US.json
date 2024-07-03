@@ -3,6 +3,7 @@
     "title": ["A Link Between Worlds", "Spoilers Logs Reader 📄"]
   },
   "nav": {
+    "cracks": "Cracks",
     "reader": "Reader",
     "preset": "Preset",
     "best": "Best"
@@ -34,5 +35,10 @@
       "errorParsing": "Error parsing JSON: ",
       "notCompatible": "This type of file is not compatible. Please use only .json files !"
     }
+  },
+  "cracks": {
+    "leftClick": "Left-click on two red boxes to link them.",
+    "rightClick": "Right-click on an already linked box to delete it.",
+    "reset": "RESET"
   }
 }

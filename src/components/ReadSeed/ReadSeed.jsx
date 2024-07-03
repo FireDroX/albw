@@ -71,56 +71,63 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
   };
 
   return (
-    <div className="read-container">
-      <div className="read-values">
-        <div className="read-infos">
-          <small style={{ color: "var(--text45)" }}>
-            SEED : <span className="location-info">{seed}</span> ; VERSION :{" "}
-            <span className="location-info">{version}</span>
+    <tr>
+      <td>
+        <div className="read-container">
+          <div className="read-values">
+            <div className="read-infos">
+              <small style={{ color: "var(--text45)" }}>
+                SEED : <span className="location-info">{seed}</span> ; VERSION :{" "}
+                <span className="location-info">{version}</span>
+              </small>
+            </div>
+            <div className="read-imgs-container">
+              {allLocationsOfItems().map((types, typesIndex) =>
+                types[typesIndex].length > 0 ? (
+                  <div className="read-imgs-sub" key={typesIndex}>
+                    <h6>{locale.readSeed.types[typesIndex]} :</h6>
+                    <div className="read-imgs">
+                      {types.map((items, itemsIndex) =>
+                        items.length > 0 ? (
+                          <img
+                            alt={"ICON_" + typesIndex + "-" + itemsIndex}
+                            src={itemsImg[typesIndex][itemsIndex]}
+                            key={typesIndex + "-" + itemsIndex}
+                            style={{
+                              backgroundColor:
+                                itemIndex.type === typesIndex &&
+                                itemIndex.index === itemsIndex
+                                  ? "var(--secondary35)"
+                                  : "transparent",
+                            }}
+                            onClick={() =>
+                              setItemIndex({
+                                type: typesIndex,
+                                index: itemsIndex,
+                              })
+                            }
+                          />
+                        ) : undefined
+                      )}
+                    </div>
+                  </div>
+                ) : undefined
+              )}
+            </div>
+            <div className="read-items">
+              {allLocationsOfItems()[itemIndex.type][itemIndex.index].map(
+                (el, i) => (
+                  <small key={el + i}>{el}</small>
+                )
+              )}
+            </div>
+          </div>
+          <small className="read-goback" onClick={handleNavigate}>
+            {"<"}- {locale.readSeed.return}
           </small>
         </div>
-        <div className="read-imgs-container">
-          {allLocationsOfItems().map((types, typesIndex) =>
-            types[typesIndex].length > 0 ? (
-              <div className="read-imgs-sub" key={typesIndex}>
-                <h6>{locale.readSeed.types[typesIndex]} :</h6>
-                <div className="read-imgs">
-                  {types.map((items, itemsIndex) =>
-                    items.length > 0 ? (
-                      <img
-                        alt={"ICON_" + typesIndex + "-" + itemsIndex}
-                        src={itemsImg[typesIndex][itemsIndex]}
-                        key={typesIndex + "-" + itemsIndex}
-                        style={{
-                          backgroundColor:
-                            itemIndex.type === typesIndex &&
-                            itemIndex.index === itemsIndex
-                              ? "var(--secondary35)"
-                              : "transparent",
-                        }}
-                        onClick={() =>
-                          setItemIndex({ type: typesIndex, index: itemsIndex })
-                        }
-                      />
-                    ) : undefined
-                  )}
-                </div>
-              </div>
-            ) : undefined
-          )}
-        </div>
-        <div className="read-items">
-          {allLocationsOfItems()[itemIndex.type][itemIndex.index].map(
-            (el, i) => (
-              <small key={el + i}>{el}</small>
-            )
-          )}
-        </div>
-      </div>
-      <small className="read-goback" onClick={handleNavigate}>
-        {"<"}- {locale.readSeed.return}
-      </small>
-    </div>
+      </td>
+    </tr>
   );
 };
 

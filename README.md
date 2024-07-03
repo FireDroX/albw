@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
-  <img src="src/assets/images/bow_light.png" alt="Bow" width=70>
+  <img src="src/assets/images/items/bow_light.png" alt="Bow" width=70>
   <a href="https://firedrox.github.io/albw/">
     <h3 align="center">ALBW Spoilers Logs Reader 📄</h3>
   </a>
@@ -14,6 +14,7 @@
   <li>
     <a href="#features">Features</a>
     <ul>
+      <li><a href="#cracks">Cracks</a></li>
       <li><a href="#reader">Reader</a></li>
       <li><a href="#best">Best runs</a></li>
     </ul>
@@ -31,6 +32,21 @@
 > This is a personal project! It is designed to work with version 0.3.1 and 0.4.0 of the [Rick Fay Randomizer](https://github.com/rickfay/z17-randomizer/tree/master) but may not be compatible with older versions.
 
 ## Features
+
+---
+
+### Cracks
+
+Left-click on two red boxes to link them. Right-click on an already linked box to delete it.
+
+<div align="center">
+  <a href="https://firedrox.github.io/albw?page=portals">
+    <img src="src/assets/example/example_cracks.png" alt="Cracks" />
+  </a>
+</div>
+<br />
+
+<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
 
 ---
 
@@ -60,7 +76,7 @@ Check out my top runs, all completed using one of the preset listed at the left.
 </div>
 <br />
 
-<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
+<p align="right">(<a href="#readme-top">Top of the page</a>)</p>
 
 ---
 
