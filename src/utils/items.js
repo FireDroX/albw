@@ -30,18 +30,6 @@ import trod from "../assets/images/items/trod.png";
 import Portal from "../assets/images/others/Portal.png";
 import weather_vanes from "../assets/images/others/weather_vanes.png";
 
-import EP from "../assets/images/keys/EP.png";
-import HG from "../assets/images/keys/HG.png";
-import TH from "../assets/images/keys/TH.png";
-import PD from "../assets/images/keys/PD.png";
-import SP from "../assets/images/keys/SP.png";
-import SW from "../assets/images/keys/SW.png";
-import T_H from "../assets/images/keys/T'H.png";
-import TR from "../assets/images/keys/TR.png";
-import DP from "../assets/images/keys/DP.png";
-import IR from "../assets/images/keys/IR.png";
-import LC from "../assets/images/keys/LC.png";
-
 export const itemsImg = [
   [
     fsword,
@@ -78,7 +66,6 @@ export const itemsImg = [
     Portal,
     weather_vanes,
   ],
-  [EP, HG, TH, PD, SP, SW, T_H, TR, DP, IR, LC],
 ];
 
 export const items = [
@@ -129,42 +116,5 @@ export const items = [
     ],
     ["Quake", "%portal_map%", "%crack_map%"],
     ["%weather_vane_map%"],
-  ],
-  [
-    [
-      "Eastern Palace Compass",
-      "Eastern Palace Small Key",
-      "Eastern Palace Big Key",
-    ],
-    [
-      "House of Gales Compass",
-      "House of Gales Small Key",
-      "House of Gales Big Key",
-    ],
-    [
-      "Tower of Hera Compass",
-      "Tower of Hera Small Key",
-      "Tower of Hera Big Key",
-    ],
-    ["Dark Palace Compass", "Dark Palace Small Key", "Dark Palace Big Key"],
-    ["Swamp Palace Compass", "Swamp Palace Small Key", "Swamp Palace Big Key"],
-    ["Skull Woods Compass", "Skull Woods Small Key", "Skull Woods Big Key"],
-    [
-      "Thieves' Hideout Compass",
-      "Thieves' Hideout Small Key",
-      "Thieves' Hideout Big Key",
-    ],
-    ["Turtle Rock Compass", "Turtle Rock Small Key", "Turtle Rock Big Key"],
-    [
-      "Desert Palace Compass",
-      "Desert Palace Small Key",
-      "Desert Palace Big Key",
-    ],
-    ["Ice Ruins Compass", "Ice Ruins Small Key", "Ice Ruins Big Key"],
-    [
-      "Lorule Castle Compass",
-      "Lorule Castle Small Key",
-      "Lorule Castle Big Key",
-    ],
   ],
 ];
