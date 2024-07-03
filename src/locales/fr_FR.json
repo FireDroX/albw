@@ -3,6 +3,7 @@
     "title": ["A Link Between Worlds", "Visualiseur de Spoilers 📄"]
   },
   "nav": {
+    "cracks": "Portails",
     "reader": "Visualiseur",
     "preset": "Config",
     "best": "Records"
@@ -34,5 +35,10 @@
       "errorParsing": "Erreur lors de l'analyse: ",
       "notCompatible": "Ce type de fichier n'est pas compatible. Veuillez utiliser uniquement des fichiers .json !"
     }
+  },
+  "cracks": {
+    "leftClick": "Cliquez gauche sur deux carrés pour les lier.",
+    "rightClick": "Cliquez droit sur un carré déjà lié pour le supprimer.",
+    "reset": "RÉINITIALISER"
   }
 }

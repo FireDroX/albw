@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import "./Portals.css";
+import { useEffect, useRef, useState, useContext } from "react";
+import { PageContext } from "../../utils/contexts/PageContext";
+
 import map from "../../assets/images/maps.png";
 import initialPortalsState from "../../utils/initialPortalsState";
 
@@ -8,6 +10,11 @@ const Portals = () => {
   const [portals, setPortals] = useState(initialPortalsState);
   const [indexClicked, setIndexClicked] = useState(null);
   const [hoveredPortal, setHoveredPortal] = useState(null);
+  const { locale } = useContext(PageContext);
+
+  useEffect(() => {
+    retreivePortals();
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -37,7 +44,7 @@ const Portals = () => {
     };
   }, [portals, hoveredPortal]);
 
-  const handleClick = (index) => {
+  const handleLeftClick = (index) => {
     setIndexClicked((prev) => {
       if (portals[index].enabled) {
         return null; // Do nothing if the div is already enabled
@@ -53,12 +60,37 @@ const Portals = () => {
           updatedPortals[index].enabled = true;
           updatedPortals[prev].enabled = true;
           setPortals(updatedPortals);
+          localStorage.setItem("portals", JSON.stringify(updatedPortals));
           return null;
         }
       } else {
         return index;
       }
     });
+  };
+
+  const handleRightClick = (e, index) => {
+    e.preventDefault();
+    if (!portals[index].enabled) return;
+    const updatedPortals = [...portals];
+    const linkedPortalIndex = updatedPortals[index].linkedIndex;
+    updatedPortals[index].linkedIndex = null;
+    updatedPortals[linkedPortalIndex].linkedIndex = null;
+    updatedPortals[index].enabled = false;
+    updatedPortals[linkedPortalIndex].enabled = false;
+    setPortals(updatedPortals);
+    localStorage.setItem("portals", JSON.stringify(updatedPortals));
+  };
+
+  const resetPortals = () => {
+    setPortals(initialPortalsState);
+    localStorage.setItem("portals", JSON.stringify(initialPortalsState));
+  };
+
+  const retreivePortals = () => {
+    const retreivedPortals =
+      JSON.parse(localStorage.getItem("portals")) || portals;
+    setPortals(retreivedPortals);
   };
 
   return (
@@ -85,11 +117,22 @@ const Portals = () => {
                     ? "#ff8c00" // Orange
                     : "#ff3030", // Red
               }}
-              onClick={() => handleClick(index)}
+              onClick={() => handleLeftClick(index)}
+              onContextMenu={(e) => handleRightClick(e, index)}
               onMouseOver={() => setHoveredPortal(index)}
               onMouseOut={() => setHoveredPortal(null)}
             ></div>
           ))}
+        </div>
+        <br />
+        <div className="portals-description">
+          <div className="portals-text">
+            <small>{locale.cracks.leftClick}</small>
+            <small>{locale.cracks.rightClick}</small>
+          </div>
+          <small className="portals-reset" onClick={resetPortals}>
+            {locale.cracks.reset}
+          </small>
         </div>
       </div>
     </section>

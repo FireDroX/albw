@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <div onClick={() => handleNavigate("portals")}>
-        <h5>Portals</h5>
+        <h5>{locale.nav.cracks}</h5>
         <FaRandom />
       </div>
       <div onClick={() => handleNavigate("reader")}>
