@@ -129,6 +129,10 @@ const Portals = () => {
             <small>{locale.cracks.leftClick}</small>
             <small>{locale.cracks.rightClick}</small>
           </div>
+          <small className="portals-text">
+            {portals.filter((portal) => portal.enabled === true).length}/
+            {portals.length}
+          </small>
           <small className="portals-reset" onClick={resetPortals}>
             {locale.cracks.reset}
           </small>
