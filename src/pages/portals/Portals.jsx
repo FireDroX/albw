@@ -108,8 +108,7 @@ const Portals = () => {
                 left: portal.X - 6,
                 backgroundColor:
                   portal.enabled &&
-                  (hoveredPortal === index ||
-                    hoveredPortal === portal.linkedIndex)
+                  [index, portal.linkedIndex].includes(hoveredPortal)
                     ? "#6495ed" // Blue
                     : portal.linkedIndex !== null
                     ? "#00ff00" // Green
