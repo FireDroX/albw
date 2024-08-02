@@ -73,7 +73,7 @@ export const items = [
     ["Great Spin", "Sword Upgrade", "Sword+"],
     ["Armor Upgrade", "Mail+"],
     ["Hylian Shield"],
-    ["Strength Upgrade", "Strength+"],
+    ["Strength Upgrade", "Strength+", "Glove+"],
     ["Pegasus Boots"],
     ["Zora's Flippers"],
     ["Bell"],
