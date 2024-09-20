@@ -23,7 +23,7 @@
   "readSeed": {
     "in": "in",
     "at": "at",
-    "types": ["ITEMS", "OTHERS", "KEYS"],
+    "types": ["ITEMS", "OTHERS", "JUNK"],
     "return": "RETURN"
   },
   "reader": {

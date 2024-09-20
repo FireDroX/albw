@@ -23,7 +23,7 @@
   "readSeed": {
     "in": "dans",
     "at": "à",
-    "types": ["OBJETS", "AUTRES", "CLES"],
+    "types": ["OBJETS", "AUTRES", "JUNK"],
     "return": "RETOUR"
   },
   "reader": {

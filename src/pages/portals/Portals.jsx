@@ -108,8 +108,7 @@ const Portals = () => {
                 left: portal.X - 6,
                 backgroundColor:
                   portal.enabled &&
-                  (hoveredPortal === index ||
-                    hoveredPortal === portal.linkedIndex)
+                  [index, portal.linkedIndex].includes(hoveredPortal)
                     ? "#6495ed" // Blue
                     : portal.linkedIndex !== null
                     ? "#00ff00" // Green
@@ -130,6 +129,10 @@ const Portals = () => {
             <small>{locale.cracks.leftClick}</small>
             <small>{locale.cracks.rightClick}</small>
           </div>
+          <small className="portals-text">
+            {portals.filter((portal) => portal.enabled === true).length}/
+            {portals.length}
+          </small>
           <small className="portals-reset" onClick={resetPortals}>
             {locale.cracks.reset}
           </small>
