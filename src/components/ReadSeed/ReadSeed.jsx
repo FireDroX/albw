@@ -117,7 +117,9 @@ const ReadSeed = ({ data, reset = function () {}, where = "reader" }) => {
             <div className="read-items">
               {allLocationsOfItems()[itemIndex.type][itemIndex.index].map(
                 (el, i) => (
-                  <small key={el + i}>{el}</small>
+                  <small key={el + i}>
+                    {i + 1}. {el}
+                  </small>
                 )
               )}
             </div>

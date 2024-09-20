@@ -30,6 +30,11 @@ import trod from "../assets/images/items/trod.png";
 import Portal from "../assets/images/others/Portal.png";
 import weather_vanes from "../assets/images/others/weather_vanes.png";
 
+import maiamai from "../assets/images/junk/maiamai.png";
+import heart_container from "../assets/images/junk/heart_container.png";
+import rupee from "../assets/images/junk/rupee_green.png";
+import guts from "../assets/images/junk/monster_guts.png";
+
 export const itemsImg = [
   [
     fsword,
@@ -66,6 +71,7 @@ export const itemsImg = [
     Portal,
     weather_vanes,
   ],
+  [maiamai, heart_container, rupee, guts],
 ];
 
 export const items = [
@@ -116,5 +122,17 @@ export const items = [
     ],
     ["Quake", "%portal_map%", "%crack_map%"],
     ["%weather_vane_map%"],
+  ],
+  [
+    ["Lost Maiamai"],
+    ["Piece of Heart", "Heart Container"],
+    [
+      "Green Rupee",
+      "Blue Rupee",
+      "Red Rupee",
+      "Purple Rupee",
+      "Silver Rupee",
+      "Gold Rupee",
+    ],
   ],
 ];
