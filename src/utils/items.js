@@ -134,5 +134,6 @@ export const items = [
       "Silver Rupee",
       "Gold Rupee",
     ],
+    ["Monster Guts", "Monster Horn", "Monster Tail"],
   ],
 ];
